@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>案例信息</span>
+                </div>
+                <div class="content_box">
+                    <strong class="v_tit"><a href="/Cases/CasesDownLoad/1/9383" target="_blank">查看全文</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Cases/Search">案例查询</a></strong>
+
+                    <table cellspacing="2" cellpadding="0" style="margin:auto; width:750px;" class="infotable">
+
+                        <tbody>
+                            <tr><td colspan="2" height="30px" style="font-weight:bold; font-size:14px; background-color:#CCCCCC; padding-left:10px;">显示案例信息</td></tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例编号：</th>
+                                <td style="background-color:#EBEBEB;">HRM-0612</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">被浏览次数：</th>
+                                <td style="background-color:#EBEBEB;">1429 次</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例名称：</th>
+                                <td style="background-color:#EBEBEB;">双向奔赴之旅：蒙牛集团员工体验项目打造记</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译名：</th>
+                                <td style="background-color:#EBEBEB;">Bi-directional Journey: the Exploration of Mengniu Employee Experience</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例作者：</th>
+                                <td style="background-color:#EBEBEB;">李亚慧，刘华，郑文丽，麦丽丝，任泽萱，高峰</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">作者单位：</th>
+                                <td style="background-color:#EBEBEB;">内蒙古财经大学</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">指导者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例企业名称：</th>
+                                <td style="background-color:#EBEBEB;">内蒙古蒙牛乳业（集团）股份有限公司</td>
+                            </tr>
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">行业：</th>
+                                <td style="background-color:#EBEBEB;">食品工业</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">规模：</th>
+                                <td style="background-color:#EBEBEB;">大型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及的职能领域：</th>
+                                <td style="background-color:#EBEBEB;">人力资源部门</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例语种：</th>
+                                <td style="background-color:#EBEBEB;">中文</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例正文页数（页）：</th>
+                                <td style="background-color:#EBEBEB;">18 页</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例类型：</th>
+                                <td style="background-color:#EBEBEB;">决策型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文关键词：</th>
+                                <td style="background-color:#EBEBEB;">双向奔赴；员工体验；人力资源数字化；激励</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文关键词：</th>
+                                <td style="background-color:#EBEBEB;">Bi-directional；employee experience；Digitization of Human Resources；motivation</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文摘要：</th>
+                                <td style="background-color:#EBEBEB;">本案例描述了蒙牛集团人力资源共享服务中心以数字化技术为依托，在聚焦业务、服务员工的实践中，不断探索并升级员工体验项目的过程。从回顾反思、增加服务价值，到优化完善、提升员工体验感，再到迭代升级、以体验促激励，通过改进员工体验理念、满足工作-生活多方位体验需求、构建完整的体系来优化和升级员工体验项目，打造职业生涯全周期的专属与幸福，激发员工的组织承诺度与归属感，进而促进工作绩效，实现数字化技术赋能员工体验的提升。通过本案例教学，帮助学生理解和掌握员工体验在激励过程中的关键作用，引导学生利用相关激励理论分析员工体验和解决人力资源服务价值的实际问题，帮助学生更好地理解企业如何依托数字技术打造员工体验项目，实现员工发展与企业目标一致的“双向奔赴”之旅。</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文摘要： </th>
+                                <td style="background-color:#EBEBEB;word-break:keep-all">This case describes the process by which Mengniu Human Resources Sharing Service Center, leveraging digital technology, continuously explores and upgrades employee experience in its practice of focusing on business and serving employees. From reviewing and reflecting on improving service value, to optimizing and improving employee experience, and then to iteratively upgrading and driving incentive effects through experience, Mengniu HRSSC optimizes and upgrades employee experience projects by optimizing the concept of &quot;employee experience&quot;, meeting the multi-dimensional experience needs of work-life, and building a systematic system. Meanwhile, it can also create exclusivity and happiness for employees throughout their career cycle, stimulate their organizational commitment and sense of belonging. Finally, it will promote the work performance, achieving the enhancement of employee experience through digital technology empowerment. This case aims to help students understand and master the key role of employee experience in the motivation process, guiding them to use relevant motivation theories to analyze employee experience and solve practical problems of human resource service value. Finally, it will help students in better understanding how enterprises can leverage digital technology to build employee experience projects and achieve value co-creation between employees and enterprise through a &quot;journey of mutual commitment&quot; .</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用对象： </th>
+                                <td style="background-color:#EBEBEB;">经营管理人员,本科生,硕士生,工商管理硕士（MBA）,</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">编写方式：</th>
+                                <td style="background-color:#EBEBEB;">采编/一手资料编写</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例年代：</th>
+                                <td style="background-color:#EBEBEB;">2023</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用课程：</th>
+                                <td style="background-color:#EBEBEB;">《人力资源管理》、《薪酬管理》</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及理论知识：</th>
+                                <td style="background-color:#EBEBEB;">人力资源数字化转型；员工激励；客户体验；员工体验；全面报酬体系</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例入库时间：</th>
+                                <td style="background-color:#EBEBEB;">2025-03</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看全文:</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/1/9383" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看案例使用说明</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/2/9383" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文正文</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文使用说明</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83379558
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

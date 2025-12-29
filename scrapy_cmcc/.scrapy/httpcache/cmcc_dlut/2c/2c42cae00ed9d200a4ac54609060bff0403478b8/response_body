@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>案例信息</span>
+                </div>
+                <div class="content_box">
+                    <strong class="v_tit"><a href="/Cases/CasesDownLoad/1/8355" target="_blank">查看全文</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Cases/Search">案例查询</a></strong>
+
+                    <table cellspacing="2" cellpadding="0" style="margin:auto; width:750px;" class="infotable">
+
+                        <tbody>
+                            <tr><td colspan="2" height="30px" style="font-weight:bold; font-size:14px; background-color:#CCCCCC; padding-left:10px;">显示案例信息</td></tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例编号：</th>
+                                <td style="background-color:#EBEBEB;">STR-2096</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">被浏览次数：</th>
+                                <td style="background-color:#EBEBEB;">1515 次</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例名称：</th>
+                                <td style="background-color:#EBEBEB;">逆水行舟：洛阳和众的绿色转型之路</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译名：</th>
+                                <td style="background-color:#EBEBEB;">Sailing against the current: Luoyang Hezhong&#39;s road to green transformation</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例作者：</th>
+                                <td style="background-color:#EBEBEB;">梁运吉，慕仕民，刘莹莹，刘思彤</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">作者单位：</th>
+                                <td style="background-color:#EBEBEB;">哈尔滨商业大学</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">指导者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例企业名称：</th>
+                                <td style="background-color:#EBEBEB;">河南和众新材料科技有限公司</td>
+                            </tr>
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">行业：</th>
+                                <td style="background-color:#EBEBEB;">其他</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">规模：</th>
+                                <td style="background-color:#EBEBEB;">中型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及的职能领域：</th>
+                                <td style="background-color:#EBEBEB;">综合管理部门/总经理办公室</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例语种：</th>
+                                <td style="background-color:#EBEBEB;">中文</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例正文页数（页）：</th>
+                                <td style="background-color:#EBEBEB;">10 页</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例类型：</th>
+                                <td style="background-color:#EBEBEB;">描述型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文关键词：</th>
+                                <td style="background-color:#EBEBEB;">绿色转型；发展战略；可持续发展；印刷企业</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文关键词：</th>
+                                <td style="background-color:#EBEBEB;">Green transformation; Development strategy; Sustainable development; Printing enterprise</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文摘要：</th>
+                                <td style="background-color:#EBEBEB;">我国“十四五”发展规划在“双碳”的总体目标下提出绿色转型概念，明确鼓励企业进行绿色技术创新，推进重要产业和关键领域的绿色转型。同时，党的二十大报告提出：“必须牢固树立和践行绿水青山就是金山银山的理念，站在人与自然和谐共生的高度谋划发展。” 印刷行业作为重污染行业之一，具有污染高、能耗高的特点，属于重点整治的行业，绿色转型是企业必然的战略方向。案例以洛阳和众印刷有限公司为例，对其绿色转型行为进行全面分析。该企业同时面临着电力供应不足、国家的绿色改革政策趋严以及洛阳市政府“三区合一”亟待搬迁的问题，资金不足是解决问题的根本阻力，如何快速获取资金来支持公司的绿色转型成为了该企业的一大难题。为应对这些挑战，公司采取了一系列绿色转型措施，包括融资租赁、售后回租以扩大融资渠道，优化生产流程，引入节能环保设备，以及利用光伏发电实现能源自给自足。通过这些措施，公司不仅缓解了资金压力，提升了生产效率，还积极响应了国家的绿色发展战略，增强了企业的市场竞争力。洛阳和众通过内部创新和战略调整，积极应对环境问题，实现绿色转型和可持续发展。其他公司可借鉴洛阳和众的经验，结合自身情况，制定适合自身的绿色转型策略，为高质量发展注入新动力。</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文摘要： </th>
+                                <td style="background-color:#EBEBEB;word-break:keep-all">China&#39;s &quot;14th Five-Year Plan&quot; development plan puts forward the concept of green transformation under the overall goal of &quot;double carbon&quot;, clearly encourages enterprises to carry out green technology innovation, and promotes the green transformation of important industries and key areas. At the same time, the report of the Party&#39;s 20th National Congress put forward: &quot;We must firmly establish and practice the concept of clear water and green mountains is gold and silver mountains, and plan development in the height of harmonious coexistence between man and nature.&quot; As one of the heavily polluting industries, the printing industry has the characteristics of high pollution and high energy consumption, and belongs to the industry of key regulation, and green transformation is the inevitable strategic direction of enterprises. Taking Luoyang Hezhong Printing Co., Ltd. as an example, the paper makes a comprehensive analysis of its green transformation behavior. At the same time, the company is facing the problem of insufficient power supply, the national green reform policy is becoming stricter, and the Luoyang City government &quot;three districts into one&quot; needs to be relocated urgently. The lack of funds is the fundamental resistance to solve the problem, and how to quickly obtain funds to support the company&#39;s green transformation has become a big problem for the company. To address these challenges, the company has adopted a series of green transformation measures, including financial leasing, sale and leaseback to expand financing channels, optimize production processes, introduce energy-saving and environmentally friendly equipment, and achieve energy self-sufficiency with photovoltaic power generation. Through these measures, the company not only alleviates the financial pressure, improves the production efficiency, but also actively responds to the national green development strategy and enhances the market competitiveness of the enterprise. Through internal innovation and strategic adjustment, Luoyang Hezhong actively responds to environmental issues and achieves green transformation and sustainable development. Other companies can learn from the experience of Luoyang Hezhong, combined with their own circumstances, to develop their own green transformation strategy, and inject new impetus for high-quality development.</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用对象： </th>
+                                <td style="background-color:#EBEBEB;">经营管理人员,本科生,硕士生,工商管理硕士（MBA）,</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">编写方式：</th>
+                                <td style="background-color:#EBEBEB;">采编/一手资料编写</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例年代：</th>
+                                <td style="background-color:#EBEBEB;">2021</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用课程：</th>
+                                <td style="background-color:#EBEBEB;">《战略管理》、《企业商业伦理》</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及理论知识：</th>
+                                <td style="background-color:#EBEBEB;">企业外部环境分析；企业内部环境分析；绿色转型理论；企业ESG分析体系；可持续发展理论；制造业高质量发展理论</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例入库时间：</th>
+                                <td style="background-color:#EBEBEB;">2024-05</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看全文:</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/1/8355" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看案例使用说明</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/2/8355" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文正文</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文使用说明</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83382537
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

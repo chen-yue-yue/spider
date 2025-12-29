@@ -1,0 +1,27 @@
+代表作标题
+包含视频数（该代表作下分 P 或条目的数量）
+视频总时长（将所有条目的时长相加后格式化为 H小时M分S秒）
+发布日期（将接口中的时间戳/日期字段格式化为 YYYY-MM-DD HH:MM:SS）
+观看次数、弹幕条数、点赞数、分享次数、收藏数
+
+代表作URL:
+https://api.bilibili.com/x/space/masterpiece?vmid=523995133&web_location=333.1387
+参数：
+vmid：523995133(不同作者取值不一样)
+web_location：333.1387
+请求方式:GET
+返回值：
+"data": [
+        {
+            "videos": 37,(包含视频数),
+            "title": "3小时超快速入门Python | 动画教学【2025新版】【自学Python教程】【零基础Python】【计算机二级Python】【Python期末速成】",(代表作标题)
+            "pubdate": 1738401600,(发布日期，时间戳要格式化)
+            "duration": 11843,(视频总时长以秒为单位)
+            "stat": {
+                "view": 4023392,(观看次数)
+                "danmaku": 8188,(弹幕条数)
+                "favorite": 101842,(收藏数)
+                "share": 20932,(分享次数)
+                "like": 51312,(点赞数)
+            },
+

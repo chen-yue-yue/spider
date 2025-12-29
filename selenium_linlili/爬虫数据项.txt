@@ -1,0 +1,7 @@
+搜索框：<input class="nav-search-input" type="text" autocomplete="off" accesskey="s" maxlength="100" x-webkit-speech="" x-webkit-grammar="builtin:translate" value="林粒粒呀" placeholder="林粒粒">
+搜索按钮：class = nav-search-btn
+主页前：class= user-name cs_pointer v_align_middle
+代表作模块：div class:masterpiece-block
+标题，播放次数，弹幕数，视频总时长：div class:bili-video-card__wrap
+播放次数，弹幕数，视频总时长：div class：bili-cover-card__stats div span
+标题： div class：bili-video-card__title title=

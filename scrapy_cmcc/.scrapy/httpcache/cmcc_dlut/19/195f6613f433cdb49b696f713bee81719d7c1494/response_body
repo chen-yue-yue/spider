@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>案例信息</span>
+                </div>
+                <div class="content_box">
+                    <strong class="v_tit"><a href="/Cases/CasesDownLoad/1/9704" target="_blank">查看全文</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Cases/Search">案例查询</a></strong>
+
+                    <table cellspacing="2" cellpadding="0" style="margin:auto; width:750px;" class="infotable">
+
+                        <tbody>
+                            <tr><td colspan="2" height="30px" style="font-weight:bold; font-size:14px; background-color:#CCCCCC; padding-left:10px;">显示案例信息</td></tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例编号：</th>
+                                <td style="background-color:#EBEBEB;">FAM-1459</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">被浏览次数：</th>
+                                <td style="background-color:#EBEBEB;">1475 次</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例名称：</th>
+                                <td style="background-color:#EBEBEB;">数据扬帆，协同起航：A公司业财数融合探索之路</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译名：</th>
+                                <td style="background-color:#EBEBEB;">Data sails, collaboration sets sail: Company A&#39;s exploration of the integration of industry, finance and data</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例作者：</th>
+                                <td style="background-color:#EBEBEB;">张立，唐丹娜，曾昭毅，邓明</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">作者单位：</th>
+                                <td style="background-color:#EBEBEB;">湘潭大学</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">指导者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例企业名称：</th>
+                                <td style="background-color:#EBEBEB;">湖南赛隆药业有限公司</td>
+                            </tr>
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">行业：</th>
+                                <td style="background-color:#EBEBEB;">医药卫生工业</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">规模：</th>
+                                <td style="background-color:#EBEBEB;">中小型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及的职能领域：</th>
+                                <td style="background-color:#EBEBEB;">财务资产部门</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例语种：</th>
+                                <td style="background-color:#EBEBEB;">中文</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例正文页数（页）：</th>
+                                <td style="background-color:#EBEBEB;">14 页</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例类型：</th>
+                                <td style="background-color:#EBEBEB;">描述型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文关键词：</th>
+                                <td style="background-color:#EBEBEB;">数据平台；模块协同；业财数融合</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文关键词：</th>
+                                <td style="background-color:#EBEBEB;">Data Platform；Modular Synergy；Business-Finance-Data Integration</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文摘要：</th>
+                                <td style="background-color:#EBEBEB;">随着数字经济的发展，财务领域智能化和数字化转型的趋势日益明显。本案例以中小企业A医药公司为例，详细阐述其通过整合各部门资源、推动跨部门协作，成功构建一个支持实时数据分析和智能决策的数据平台。通过数据平台的模块应用，A公司实现了业财数的深度融合，解决应收账款周期长、库存积压严重以及产销脱节等问题。通过对这一案例的剖析，引导学员思考如何利用数据平台解决企业财务管理和运营管理中的难题，从而实现业财数融合。本案例的实践经验也为医药行业其他企业提供了有价值的参考，特别是在如何通过数据平台实现业务与财务的深度融合、优化业务质量管理、提升财务决策效率等方面，助力企业实现数字化转型与精细化运营。</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文摘要： </th>
+                                <td style="background-color:#EBEBEB;word-break:keep-all">With the development of the digital economy, the trend toward intelligent and digital transformation in the financial sector has become increasingly evident. This case study takes SME A Pharmaceutical Company as an example, elaborating on how it successfully built a data platform supporting real-time data analysis and intelligent decision-making by integrating resources across departments and promoting cross-departmental collaboration. Through modular applications of the data platform, Company A achieved deep integration of business, finance, and data, resolving challenges such as prolonged accounts receivable cycles, excessive inventory backlogs, and disconnects between production and sales. By dissecting this case, trainees are guided to think about leveraging data platforms to address difficulties in corporate financial management and operational management, thereby realizing business-finance-data integration. The practical experience of this case also provides valuable references for other enterprises in the pharmaceutical industry, particularly in areas such as achieving deep integration of business and finance through data platforms, optimizing business quality management, enhancing financial decision-making efficiency, and facilitating digital transformation and refined operations.</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用对象： </th>
+                                <td style="background-color:#EBEBEB;">本科生,硕士生,工商管理硕士（MBA）,</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">编写方式：</th>
+                                <td style="background-color:#EBEBEB;">采编/一手资料编写</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例年代：</th>
+                                <td style="background-color:#EBEBEB;">2023</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用课程：</th>
+                                <td style="background-color:#EBEBEB;">《内部控制与风险管理》、《智能管理会计》</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及理论知识：</th>
+                                <td style="background-color:#EBEBEB;">业财融合；业财数融合战略的驱动因素；业财数融合；协同效应；业财数融合成效；</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例入库时间：</th>
+                                <td style="background-color:#EBEBEB;">2025-07</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看全文:</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/1/9704" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看案例使用说明</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/2/9704" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文正文</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文使用说明</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83378824
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

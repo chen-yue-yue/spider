@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>案例信息</span>
+                </div>
+                <div class="content_box">
+                    <strong class="v_tit"><a href="/Cases/CasesDownLoad/1/2362" target="_blank">查看全文</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Cases/Search">案例查询</a></strong>
+
+                    <table cellspacing="2" cellpadding="0" style="margin:auto; width:750px;" class="infotable">
+
+                        <tbody>
+                            <tr><td colspan="2" height="30px" style="font-weight:bold; font-size:14px; background-color:#CCCCCC; padding-left:10px;">显示案例信息</td></tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例编号：</th>
+                                <td style="background-color:#EBEBEB;">STR-0492</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">被浏览次数：</th>
+                                <td style="background-color:#EBEBEB;">9622 次</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例名称：</th>
+                                <td style="background-color:#EBEBEB;">投资控股还是产业运营？——丰收集团的战略定位之惑</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译名：</th>
+                                <td style="background-color:#EBEBEB;">Investment-holding or Industry-operation?—FengShou Group’s choice of Strategic Positioning</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例作者：</th>
+                                <td style="background-color:#EBEBEB;">赵杨，张秋生等</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">作者单位：</th>
+                                <td style="background-color:#EBEBEB;">北京交通大学</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">指导者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例企业名称：</th>
+                                <td style="background-color:#EBEBEB;">丰收集团</td>
+                            </tr>
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">行业：</th>
+                                <td style="background-color:#EBEBEB;">食品工业</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">规模：</th>
+                                <td style="background-color:#EBEBEB;">大型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及的职能领域：</th>
+                                <td style="background-color:#EBEBEB;">规划计划部门</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例语种：</th>
+                                <td style="background-color:#EBEBEB;">中文</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例正文页数（页）：</th>
+                                <td style="background-color:#EBEBEB;">28 页</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例类型：</th>
+                                <td style="background-color:#EBEBEB;">决策型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文关键词：</th>
+                                <td style="background-color:#EBEBEB;">战略定位；影响要素；分析框架；国企改革；投资控股型；产业运营型；2016百优案例</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文关键词：</th>
+                                <td style="background-color:#EBEBEB;">Strategic positioning; influencing factors; analysis framework; reform of China’s state-owned companies; investment-holding type; industry-operation type</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文摘要：</th>
+                                <td style="background-color:#EBEBEB;">本案例以党的十八届三中全会后我国国企改革为大背景，描写大型国有企业——丰收集团的新任董事长，面临着集团产业梯次格局不合理、支柱产业增长乏力、对各产业经营管控薄弱，经营风险不断积聚的困境。他顺应国家组建国有资本投资运营公司的改革方向，试图抓住这次国企改革的历史机遇，为集团在“十三五”期间确立“投资控股型”战略定位。该战略定位旨在占据国有资产资源配置的“制高点”，最大限度分享改革的政策红利，使集团形成科学合理的产业布局；同时，充分发挥市场在资源配置中的决定性作用，最终通过优胜劣汰，以完成从“管资产”到“管资本”的转变，使国有资本得到高效配置和保值增值，同时最大限度地保障员工的充分就业，带动集团完成转型升级。然而，集团高层对此产生了分歧——部分元老认为投控型战略并不是解决当前问题的对症良药，因为集团并不具备支撑上述战略定位所具备的资源与能力，同时也偏离了集团传统的宗旨、使命，以及社会公众对集团发展的期望，还对集团的品牌产生了稀释效应。他们认为，当前集团应该果断地进行产业精简，聚焦资源，通过加强各产业间的协同效应、创新商业模式来打造支柱产业的核心竞争力，最终应确立“产业运营型”战略定位。本案例启发读者思考影响企业战略定位的主要因素有哪些？应采用怎样的分析框架来认识、平衡这些要素，以求得最合理的战略定位？同时，在国企改革顶层设计方案——《关于深化国有企业改革的指导意见》及配套文件陆续发布后，也让读者对我国涉足多产业的、混业经营的大型国有企业集团在特定的政策环境下，以及社会公众对国企社会责任的期望之下，其战略定位所面临的诸多约束这一特殊性能有所认识。</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文摘要： </th>
+                                <td style="background-color:#EBEBEB;word-break:keep-all">With the end of the Third Plenary Session of the 18th Central Committee of CPC, the new reform of state-owned companies (SOEs) in China has begun. To explore a correct strategy position of the development， this case analyzes the divergence between the new chairman and executives of the FengShou Group. Faced with so many problems, such as the unreasonable structure of industry echelon group, the sluggish growth of pillar industries, the weak management and control to each industry business, continuous accumulation of business risk and so on, the chairman of this large SOE tries to conform the state reform direction of forming state-owned capital investment company, to seize the historic opportunity of SOE reform and to establish “investment-holding” strategic positioning for the group during the period of “13th Five-Year”. This positioning aims to occupy the commanding heights during state-owned assets resources allocation and to maximize the dividend of reforms, so that the group can form a scientific and reasonable industrial layout; Meanwhile, it gives full play to the decisive role of market in resources allocation，selects the superior and ultimately completes the transformation from &quot;management of assets&quot; to &quot;management of capital&quot;, which can also make state-owned capital highly efficient allocated and value added. Meanwhile, maximizing the protection of employees&#39; full employment and driving the group to complete the transformation and upgrading. However, the group executives had a disagreement: A part of senior statesmen think that investment-holding strategy can&#39;t solve the current problems properly. Because the group does not have the resources and capabilities to support the above strategic positioning and it also deviated from the group&#39;s original purpose mission, as well as the public&#39;s expectation for the development of the group. Besides, it also has a dilution effect on the group&#39;s brands. They believe that currently the group should streamline the industry decisively and aggregate resources, strengthen the synergy among the various industries and innovate business model to build the core competitiveness of the pillar industries and establish “industry-operation” strategic positioning at the end. This case can enlighten readers to figure out what kind of main factors affect the enterprise&#39;s strategic positioning? What kind of analysis framework should be used to understand and balance these factors in order to get the most reasonable strategic positioning? At the same time, after the successive release of the top-level design plan of the reform of SOEs—“Guiding Opinions on Deepening the Reform of SOEs” and its supporting documents, readers also will have a general picture on the uniqueness of the SOE groups featuring multi-industry and mixed operation management, under the influence of certain policies as well as the public’s expectation in making their strategic positioning with a lot restrictions.</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用对象： </th>
+                                <td style="background-color:#EBEBEB;">本科生,硕士生,工商管理硕士（MBA）,</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">编写方式：</th>
+                                <td style="background-color:#EBEBEB;">采编/一手资料编写</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例年代：</th>
+                                <td style="background-color:#EBEBEB;">2015</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用课程：</th>
+                                <td style="background-color:#EBEBEB;">《战略管理》</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及理论知识：</th>
+                                <td style="background-color:#EBEBEB;">战略定位分析框</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例入库时间：</th>
+                                <td style="background-color:#EBEBEB;">2016-08</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看全文:</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/1/2362" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看案例使用说明</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/2/2362" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文正文</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文使用说明</th>
+                                <td style="background-color:#EBEBEB;">
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83398732
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

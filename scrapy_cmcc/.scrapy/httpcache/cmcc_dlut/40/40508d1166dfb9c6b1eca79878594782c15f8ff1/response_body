@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>案例信息</span>
+                </div>
+                <div class="content_box">
+                    <strong class="v_tit"><a href="/Cases/CasesDownLoad/1/6962" target="_blank">查看全文</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Cases/Search">案例查询</a></strong>
+
+                    <table cellspacing="2" cellpadding="0" style="margin:auto; width:750px;" class="infotable">
+
+                        <tbody>
+                            <tr><td colspan="2" height="30px" style="font-weight:bold; font-size:14px; background-color:#CCCCCC; padding-left:10px;">显示案例信息</td></tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例编号：</th>
+                                <td style="background-color:#EBEBEB;">STR-1748</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">被浏览次数：</th>
+                                <td style="background-color:#EBEBEB;">8852 次</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例名称：</th>
+                                <td style="background-color:#EBEBEB;">大展“岚图”：东风汽车在挪威</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译名：</th>
+                                <td style="background-color:#EBEBEB;">VOYAH’s Big Show：Dongfeng Motor in Norway</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例作者：</th>
+                                <td style="background-color:#EBEBEB;">刘凯，张亦珑，曲俞柯，余姝婷，张嘉欣，朱佳怡</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">作者单位：</th>
+                                <td style="background-color:#EBEBEB;">中南财经政法大学</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">指导者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">译者：</th>
+                                <td style="background-color:#EBEBEB;"></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例企业名称：</th>
+                                <td style="background-color:#EBEBEB;">东风汽车集团岚图科技有限公司</td>
+                            </tr>
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">行业：</th>
+                                <td style="background-color:#EBEBEB;">机械、电机工业</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">规模：</th>
+                                <td style="background-color:#EBEBEB;">大型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及的职能领域：</th>
+                                <td style="background-color:#EBEBEB;">规划计划部门</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例语种：</th>
+                                <td style="background-color:#EBEBEB;">中文</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例正文页数（页）：</th>
+                                <td style="background-color:#EBEBEB;">9 页</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例类型：</th>
+                                <td style="background-color:#EBEBEB;">描述型</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文关键词：</th>
+                                <td style="background-color:#EBEBEB;">企业国际化；国际区位选择；智能电动汽车；微案例none</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文关键词：</th>
+                                <td style="background-color:#EBEBEB;">Enterprise internationalization, International location choice, Value chain theory, &quot;VOYAH&quot;, Smart electric vehicles</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">中文摘要：</th>
+                                <td style="background-color:#EBEBEB;">在“双循环”新发展格局下传统汽车产业如何抓住数字化转型机遇并参与全球竞争，是企业国际战略相关课程教学中非常重要的命题。本案例以东风汽车集团旗下的“岚图”高端智能电动车进军挪威市场为主线，讲述了岚图品牌如何从创立之初抢抓汽车“新四化”发展机遇，到积极谋划国际布局，再到精准进军挪威市场，引领中国汽车产业数字化转型升级和参与国际竞争，跑出中国高端智能电动车领域“新赛道”的故事。案例主要分为鲲鹏初生、鲲鹏蓄势、鲲鹏出海、鲲鹏展翅四个部分，分别展现了岚图国际化动因、国际区位选择、国际进入模式及国际营销方式，真实再现了企业国际化过程中的战略决策与经营策略。案例通过鲜活的语言、丰富的资料和详实的数据将平实的企业国际化动因理论、区位选择理论、国际营销策略融入到生动的叙事之中，不仅能让学生通过解读中国企业故事，学习理解公司的国际化战略决策，同时也能厚植企业成长与国家发展同向而行的大局观念，培养学生投身社会发展的使命与担当。</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">英文摘要： </th>
+                                <td style="background-color:#EBEBEB;word-break:keep-all">How to seize the opportunity of digital transformation and participate in global competition in the traditional automobile industry under the new development pattern of &quot;double cycle&quot; is a very important proposition in the teaching of international strategy related courses. This case is about the entry of high-end intelligent electric vehicles of Dongfeng Motor Group into the Norwegian market, and tells how the brand of VOYAH seized the opportunity of the &quot;new four&quot; development of automobiles at the beginning of its establishment, actively planned the international layout, and then entered the Norwegian market precisely. The story is about how VOYAH led the digital transformation and upgrading of Chinese auto industry and participated in international competition, and ran a &quot;new track&quot; in the field of high-end intelligent electric vehicles in China. The case is mainly divided into four parts, namely, Kunpeng Born, Kunpeng Growing, Kunpeng Leap-up and Kunpeng Flying, which show the motivation of internationalization, international location choice, international entry mode and international marketing, and truly reproduce the strategic decision and management strategy of the enterprise in the process of internationalization. Through vivid language, rich information and detailed data, the case integrates the theory of internationalization motivation, location selection and international marketing strategy into a vivid narrative, which not only enables students to learn to understand the internationalization strategy decision of the company by reading the story of Chinese enterprises, but also cultivates the big picture concept that the growth of enterprises and the development of the country go in the same direction, and cultivates students&#39; mission and commitment to social development. The students will also learn to understand the strategic decisions of Chinese companies through reading their stories.</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用对象： </th>
+                                <td style="background-color:#EBEBEB;">本科生,硕士生,工商管理硕士（MBA）,</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">编写方式：</th>
+                                <td style="background-color:#EBEBEB;">采编/一手资料编写</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例年代：</th>
+                                <td style="background-color:#EBEBEB;">2022</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">适用课程：</th>
+                                <td style="background-color:#EBEBEB;">《跨国经营与管理》、《国际商务》</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例涉及理论知识：</th>
+                                <td style="background-color:#EBEBEB;">企业国际化动因理论:企业外部动因、企业内部动因；PESTEL模型；波特“钻石模型”；跨国公司区位选择理论；企业的国际进入策略:合资、合作；企业的国际营销策略:经销、分销；企业的国际进入策略:独资、战略联盟；企业的国际营销策略:自建品牌、零售</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th style="background-color:#EBEBEB;">案例入库时间：</th>
+                                <td style="background-color:#EBEBEB;">2023-01</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看全文:</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/1/6962" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看案例使用说明</th>
+                                <td style="background-color:#EBEBEB;"><a href="/Cases/CasesDownLoad/2/6962" target="_blank">点击查看</a></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文正文</th>
+                                <td style="background-color:#EBEBEB;">
+                                            <a href="/Cases/MCasesDetail/1/6962" target="_blank">点击查看</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color:#EBEBEB;">查看微案例英文使用说明</th>
+                                <td style="background-color:#EBEBEB;">
+                                            <a href="/Cases/MCasesDetail/2/6962" target="_blank">点击查看</a>
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83387228
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

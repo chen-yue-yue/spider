@@ -1,0 +1,962 @@
+2025-12-26 21:15:36 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: xhs_comments)
+2025-12-26 21:15:36 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26100-SP0'}
+2025-12-26 21:15:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-12-26 21:15:36 [asyncio] DEBUG: Using selector: SelectSelector
+2025-12-26 21:15:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-12-26 21:15:36 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-12-26 21:15:36 [scrapy.extensions.telnet] INFO: Telnet Password: e6c8f438a610c2a6
+2025-12-26 21:15:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-12-26 21:15:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'xhs_comments',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'spider_test.log',
+ 'NEWSPIDER_MODULE': 'xhs_comments.spiders',
+ 'SPIDER_MODULES': ['xhs_comments.spiders']}
+2025-12-26 21:15:36 [asyncio] DEBUG: Using proactor: IocpProactor
+2025-12-26 21:15:36 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:36 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2025-12-26 21:15:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2025-12-26 21:15:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-12-26 21:15:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-12-26 21:15:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-12-26 21:15:37 [scrapy.core.engine] INFO: Spider opened
+2025-12-26 21:15:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-12-26 21:15:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-12-26 21:15:37 [scrapy-playwright] INFO: Starting download handler
+2025-12-26 21:15:37 [scrapy-playwright] INFO: Starting download handler
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Launching 1 startup context(s)
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Launching browser chromium
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Launching 1 startup context(s)
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Launching browser chromium
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Browser chromium launched
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Browser chromium launched
+2025-12-26 21:15:38 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2025-12-26 21:15:38 [scrapy-playwright] INFO: Startup context(s) launched
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2025-12-26 21:15:39 [scrapy-playwright] INFO: Startup context(s) launched
+2025-12-26 21:15:39 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://www.xiaohongshu.com/explore> (resource type: document)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://www.xiaohongshu.com/explore>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://as.xiaohongshu.com/api/sec/v1/ds?appId=xhs-pc-web> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/3e44/public/04b29480233f4def5c875875b6bdc3b1.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/3e44/public/a9ef723c54cfdb63556bffe75cf06ae7.js?s=sdt_source_init> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/bundler-runtime.f5d78999.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/vendor-dynamic.98fb280b.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-polyfill.50c90ea7.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-axios.4d38c57d.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-vue.4802a513.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/vendor.6ccb318b.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/index.f1d195bb.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/3e44/public/04b29480233f4def5c875875b6bdc3b1.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/bundler-runtime.f5d78999.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-axios.4d38c57d.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/ds?appId=xhs-pc-web>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-vue.4802a513.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/library-polyfill.50c90ea7.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/vendor.6ccb318b.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/index.f1d195bb.js>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/3e44/public/a9ef723c54cfdb63556bffe75cf06ae7.js?s=sdt_source_init>
+2025-12-26 21:15:39 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/vendor-dynamic.98fb280b.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/67db1d39c4a160840099fb53a3f22ac6/notes_pre_post/1040g3k031qh5m93k70305ocljlf416e4j4rg2ao!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pj2tjbk3q005ocljlf416e43k1jf10?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/9c42d090921dc134b81e6b844e5b38ac/notes_pre_post/1040g3k031qan6drvng6g5okb4kv8cve4uqom2l8!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q4uqv1dg06g5okb4kv8cve40eb7p18?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/f4e38bd59c9a13ef9240958ddde0ccf2/notes_pre_post/1040g3k031qf6g1ub6u405p2l67ijoo3025n0jto!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/64f7fc1b85200f7e195e624c.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/07ea33cd7c3915b306a34efe26349b87/1040g2sg31pns2dk74ua05o01ii008vee5hpkkqg!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/63e09bdd77e8ec315cad0392.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31js2n40m2o5g5nus4lug8ukl5i9q0qg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qeho3edga005qaa90vdtgolbliddd0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/274d55116cae0fa8e47a40cf0f70a6ba/1040g00831qbuvjlogad05nus4lug8ukl2vc9p2g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/786d1f532667b9c7717456587fd9cbf5/1040g00831qf7iqr50a005qaa90vdtgol5q54bno!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g0odl89gi4g5ph1ssr1okmkk2ahp5g?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/0b395cf97a09cc39c7edf764ccc498a5/spectrum/1040g34o31pn25o1gju505ph1ssr1okmk9n3hc3g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/b38cd520632fe0ce51379fb2df743baa67f09f3d.png?imageView2/2/w/100/format/png> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/12a38cf1c7e7bd05e3bf0647e20916f9/1040g2sg31qfrqsi7g0rg5p2nbj0qh487jn3ldmo!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mgb07rf68605p2nbj0qh487h0ad9q0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pr2bp3d40005q9l2k9do72o2akk54g?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0t2dtp4s005pmaqot7ebsskfnk4sg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qcnvi7ono6g5pc3q1874vp3hbsp0hg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31couaigo0s0049kv5psmotasmkir3b8?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mr9p41rl86g5o2sir408dshikpeiq0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/ba7d00d194b2a5ab34f7bfa6eff501bb/1040g2sg31q6n7akjn4705q9l2k9do72o9c8m0m0!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31id2enrvga6g5p7jsek1mau6u6rvnl0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qd4g2f2nu605p7oe2nhmbc29ahqrpo?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/a77c12daa035b87ba3dca1a58224868e/1040g2sg31qd32gtemu7g5pmaqot7ebss5q22edo!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pjc0ch04k6g5pvqc9si2giec4ghbu8?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31f4mqea2me005pfs4j6ipsnpp2l22eo?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mrct8ffku605q4v625mbudg6tdos9g?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q93q7lhga5g5pn0adm7ccnjd2h8pd0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31psiqa8gkm105padr1q176h5sb1vrpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l47so5p30005p02ue4k3ugudalmnn0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pf1npma2a005p4qntmqmopb6edqr8o?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/a7b0cae65cd2981c9ac9a2279e887846/notes_pre_post/1040g3k831qi83evfnu005pc3q1874vp374vomd8!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmnqrbgm6g5pnp7c5ne4ea1l9jotg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/6466616be03b13143132d9c9.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318kj1eilkc005nq2hc7g8iul73r1fu0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/a5dce9dc0357490a8e14ed29125ffc6b/1040g2sg31qfabnp17ukg49kv5psmotast3ahmmg!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mg525p75ib05pjiq3khot0gn139pg0?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pcv0p41ig005npkm780956nr6h85uo?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/dcfddbd9a52e3ac190865a6ec9819e9f/1040g2sg31qh6l603nodg5o2sir408dshe93nmoo!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30mqovg6m4o5g5og9qpak0ntscg1aero?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318nh2gd6gq0g5o35edfg8abq9km81j8?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nqkicurmg005oik1s6odbulrcb7ugg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/8da410cd3e08074a8e0716af7609be9d/notes_pre_post/1040g3k831qfg1k4qg0d05p7jsek1mau6dlak340!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/647454b6dcc97896b29bee73.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315fkq88f0s005p26eor4mmq2sk32q20?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/648894819cf4c9c14e10a846.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/0bee7dd565b3fe79f061cb7af88ca590/notes_pre_post/1040g3k031qc0ab49nu6g5p7oe2nhmbc24qqs7e8!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/391f1c74a8d55ef5abd3f73dce2eea25/1040g2sg31qa9f0oug0dg5pvqc9si2gie6rm81mo!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/d4c674fcb5caf075f85656217f0ff9f6/1040g00831qbv01oo7u005pfs4j6ipsnp2dg2r1g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/28948c4bf2fa50e68dea30be184a79c2/1040g00831qgu4ns4gm405q4v625mbudg35nmcco!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/3165df07e83bea4782822792f9e411bf/notes_pre_post/1040g3k831qcnpviig0c05pn0adm7ccnj7ks6dj0!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ii3brhu02005nq9m2lg92flpdrm4s8?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30pbpmlk73q6g5nuldiqg8r32e3hmp98?imageView2/2/w/60/format/jpg|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/a260bd2bd109dad0106c4437b0eb76e7/1040g00831pvmh8g3no005padr1q176h5vj98s28!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/a1865a013651f15553edfb004ff9c581/1040g00831qhum3vtnu105p02ue4k3ugucmvdj2g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/0fa5ca9e56ef0ab582251d02f5e54c16/1040g2sg31qbiodor74705p4qntmqmopb6jtqdco!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/0ff14cf9cee4da270c0c78355ddca532/notes_pre_post/1040g3k831qflenj76u6g5pnp7c5ne4easc0ad7o!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/c765d0963ea26f977ad842476c859a7f/1040g2sg31q9anc5vng105nb9rf5090fsfl502q0!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/667e46af97e6a7fb922ec13a5b71cca4/1040g2sg31qgivoo2ngl05nq2hc7g8iuldq1n56g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/594e115aeaf2eb11fb48ad34aaca51e4/1040g2sg31ptnigi94h3g5pjiq3khot0gpake3kg!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/135445f1bfd2ac5dfc4f7c32a32ca9ae/1040g00831qfkbl8n7g005npkm780956nhcatpc8!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/0f674a4d3906cc8ea3e38df009554216/1040g00831q98rp3cno005og9qpak0ntsn64u3b0!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/3ad56c741cca9307c4d407e5dac8e0d4/notes_pre_post/1040g3k831qgj2m4t72005o35edfg8abqam1ov1g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/60f4263d73a57aa7a86c3dda8f3f326d/1040g00831qibfnrfnu0g5oik1s6odbul8omuqdo!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/78f7591a226c2e16e5c0cdff22277d64/notes_pre_post/1040g3k031qgisdtmg0005ovjgtkjq7deocnvdkg!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/06692041b86fdc76fdfc7fab43a9f1c1/1040g2sg31qe9ua9572e05p26eor4mmq2o0nkf3g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/65221d242dd0aab6fb44859515579ea8/1040g2sg31pchto242a005oqjubt6bme8h299rd8!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/31819a729059fc52d39a57804779f8cc/1040g2sg31pt3hu50kmfg5nq9m2lg92fl0ug2n5g!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262115/2bf5e07a72979047b6b54fd796a5d95c/1040g00831plvfkpe4k405nuldiqg8r32ocqqn48!nc_n_nwebp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pj2tjbk3q005ocljlf416e43k1jf10?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qeho3edga005qaa90vdtgolbliddd0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/64f7fc1b85200f7e195e624c.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q4uqv1dg06g5okb4kv8cve40eb7p18?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/8019.6ff0577f.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-video-qc.xhscdn.com/fe-platform/abf6e0874371419fa6fffa7540610e2013588fe6/html2canvas.min.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Track.15fcd785.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/p/pj> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/sec/v1/sbtsource> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/606.29bd1871.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://pages.xiaohongshu.com/data/sem_sdk> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://edith.xiaohongshu.com/api/redcaptcha/v2/getconfig> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/Explore.30c1e8ce.css> (resource type: stylesheet, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Explore.fe9738dc.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31js2n40m2o5g5nus4lug8ukl5i9q0qg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/63e09bdd77e8ec315cad0392.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g0odl89gi4g5ph1ssr1okmkk2ahp5g?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mgb07rf68605p2nbj0qh487h0ad9q0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31couaigo0s0049kv5psmotasmkir3b8?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31f4mqea2me005pfs4j6ipsnpp2l22eo?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pf1npma2a005p4qntmqmopb6edqr8o?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/6466616be03b13143132d9c9.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318nh2gd6gq0g5o35edfg8abq9km81j8?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0t2dtp4s005pmaqot7ebsskfnk4sg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/9c42d090921dc134b81e6b844e5b38ac/notes_pre_post/1040g3k031qan6drvng6g5okb4kv8cve4uqom2l8!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31id2enrvga6g5p7jsek1mau6u6rvnl0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pjc0ch04k6g5pvqc9si2giec4ghbu8?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mrct8ffku605q4v625mbudg6tdos9g?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nqkicurmg005oik1s6odbulrcb7ugg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318kj1eilkc005nq2hc7g8iul73r1fu0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/648894819cf4c9c14e10a846.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/b38cd520632fe0ce51379fb2df743baa67f09f3d.png?imageView2/2/w/100/format/png>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l47so5p30005p02ue4k3ugudalmnn0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mg525p75ib05pjiq3khot0gn139pg0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pcv0p41ig005npkm780956nr6h85uo?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qcnvi7ono6g5pc3q1874vp3hbsp0hg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qd4g2f2nu605p7oe2nhmbc29ahqrpo?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31psiqa8gkm105padr1q176h5sb1vrpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mr9p41rl86g5o2sir408dshikpeiq0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/647454b6dcc97896b29bee73.jpg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q93q7lhga5g5pn0adm7ccnjd2h8pd0?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/786d1f532667b9c7717456587fd9cbf5/1040g00831qf7iqr50a005qaa90vdtgol5q54bno!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/67db1d39c4a160840099fb53a3f22ac6/notes_pre_post/1040g3k031qh5m93k70305ocljlf416e4j4rg2ao!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315fkq88f0s005p26eor4mmq2sk32q20?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ii3brhu02005nq9m2lg92flpdrm4s8?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/274d55116cae0fa8e47a40cf0f70a6ba/1040g00831qbuvjlogad05nus4lug8ukl2vc9p2g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/12a38cf1c7e7bd05e3bf0647e20916f9/1040g2sg31qfrqsi7g0rg5p2nbj0qh487jn3ldmo!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/f4e38bd59c9a13ef9240958ddde0ccf2/notes_pre_post/1040g3k031qf6g1ub6u405p2l67ijoo3025n0jto!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmnqrbgm6g5pnp7c5ne4ea1l9jotg?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30mqovg6m4o5g5og9qpak0ntscg1aero?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/0b395cf97a09cc39c7edf764ccc498a5/spectrum/1040g34o31pn25o1gju505ph1ssr1okmk9n3hc3g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/ba7d00d194b2a5ab34f7bfa6eff501bb/1040g2sg31q6n7akjn4705q9l2k9do72o9c8m0m0!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pr2bp3d40005q9l2k9do72o2akk54g?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/a77c12daa035b87ba3dca1a58224868e/1040g2sg31qd32gtemu7g5pmaqot7ebss5q22edo!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/07ea33cd7c3915b306a34efe26349b87/1040g2sg31pns2dk74ua05o01ii008vee5hpkkqg!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30pbpmlk73q6g5nuldiqg8r32e3hmp98?imageView2/2/w/60/format/jpg|imageMogr2/strip>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/8da410cd3e08074a8e0716af7609be9d/notes_pre_post/1040g3k831qfg1k4qg0d05p7jsek1mau6dlak340!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/a7b0cae65cd2981c9ac9a2279e887846/notes_pre_post/1040g3k831qi83evfnu005pc3q1874vp374vomd8!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/0bee7dd565b3fe79f061cb7af88ca590/notes_pre_post/1040g3k031qc0ab49nu6g5p7oe2nhmbc24qqs7e8!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Track.15fcd785.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/8019.6ff0577f.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-video-qc.xhscdn.com/fe-platform/abf6e0874371419fa6fffa7540610e2013588fe6/html2canvas.min.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/d4c674fcb5caf075f85656217f0ff9f6/1040g00831qbv01oo7u005pfs4j6ipsnp2dg2r1g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/p/pj>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/28948c4bf2fa50e68dea30be184a79c2/1040g00831qgu4ns4gm405q4v625mbudg35nmcco!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/a260bd2bd109dad0106c4437b0eb76e7/1040g00831pvmh8g3no005padr1q176h5vj98s28!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/3165df07e83bea4782822792f9e411bf/notes_pre_post/1040g3k831qcnpviig0c05pn0adm7ccnj7ks6dj0!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/667e46af97e6a7fb922ec13a5b71cca4/1040g2sg31qgivoo2ngl05nq2hc7g8iuldq1n56g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/c765d0963ea26f977ad842476c859a7f/1040g2sg31q9anc5vng105nb9rf5090fsfl502q0!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/dcfddbd9a52e3ac190865a6ec9819e9f/1040g2sg31qh6l603nodg5o2sir408dshe93nmoo!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/135445f1bfd2ac5dfc4f7c32a32ca9ae/1040g00831qfkbl8n7g005npkm780956nhcatpc8!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/0fa5ca9e56ef0ab582251d02f5e54c16/1040g2sg31qbiodor74705p4qntmqmopb6jtqdco!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/sbtsource>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/31819a729059fc52d39a57804779f8cc/1040g2sg31pt3hu50kmfg5nq9m2lg92fl0ug2n5g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/3ad56c741cca9307c4d407e5dac8e0d4/notes_pre_post/1040g3k831qgj2m4t72005o35edfg8abqam1ov1g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/f218/f/public/ds.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/3e44/public/bf7d4e32677698655a5cadc581fd09b3.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/f218/a15/public/04b29480233f4def5c875875b6bdc3b1.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v2/fp/962356ead351e7f2422eb57edff6982d.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/06692041b86fdc76fdfc7fab43a9f1c1/1040g2sg31qe9ua9572e05p26eor4mmq2o0nkf3g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/sec/v1/sbtsource> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/sec/v1/scripting> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/78f7591a226c2e16e5c0cdff22277d64/notes_pre_post/1040g3k031qgisdtmg0005ovjgtkjq7deocnvdkg!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Explore.fe9738dc.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/65221d242dd0aab6fb44859515579ea8/1040g2sg31pchto242a005oqjubt6bme8h299rd8!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/594e115aeaf2eb11fb48ad34aaca51e4/1040g2sg31ptnigi94h3g5pjiq3khot0gpake3kg!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/redcaptcha/v2/getconfig>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-video-qc.xhscdn.com/fe-platform-file/104101b831qffaqeqga06an4b0q2g0000000001dt3bmd4> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/391f1c74a8d55ef5abd3f73dce2eea25/1040g2sg31qa9f0oug0dg5pvqc9si2gie6rm81mo!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/a1865a013651f15553edfb004ff9c581/1040g00831qhum3vtnu105p02ue4k3ugucmvdj2g!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/a5dce9dc0357490a8e14ed29125ffc6b/1040g2sg31qfabnp17ukg49kv5psmotast3ahmmg!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/606.29bd1871.js>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/0f674a4d3906cc8ea3e38df009554216/1040g00831q98rp3cno005og9qpak0ntsn64u3b0!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/0ff14cf9cee4da270c0c78355ddca532/notes_pre_post/1040g3k831qflenj76u6g5pnp7c5ne4easc0ad7o!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/2bf5e07a72979047b6b54fd796a5d95c/1040g00831plvfkpe4k405nuldiqg8r32ocqqn48!nc_n_nwebp_mw_1>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://pages.xiaohongshu.com/data/sem_sdk>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/scripting>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/Explore.30c1e8ce.css>
+2025-12-26 21:15:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262115/60f4263d73a57aa7a86c3dda8f3f326d/1040g00831qibfnrfnu0g5oik1s6odbul8omuqdo!nc_n_nwebp_mw_1>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/NPS.0fee7ba1.css> (resource type: stylesheet, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/NPS.f09209ea.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/9262.aad9369a.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/395.6ce4f169.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/3644.d7f699a4.css> (resource type: stylesheet, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/3644.f87c3808.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/b38cd520632fe0ce51379fb2df743baa67f09f3d.png?imageView2/2/w/100/format/webp> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pj2tjbk3q005ocljlf416e43k1jf10?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q4uqv1dg06g5okb4kv8cve40eb7p18?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/64f7fc1b85200f7e195e624c.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/63e09bdd77e8ec315cad0392.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31js2n40m2o5g5nus4lug8ukl5i9q0qg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qeho3edga005qaa90vdtgolbliddd0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g0odl89gi4g5ph1ssr1okmkk2ahp5g?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mgb07rf68605p2nbj0qh487h0ad9q0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pr2bp3d40005q9l2k9do72o2akk54g?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0t2dtp4s005pmaqot7ebsskfnk4sg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qcnvi7ono6g5pc3q1874vp3hbsp0hg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31couaigo0s0049kv5psmotasmkir3b8?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mr9p41rl86g5o2sir408dshikpeiq0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31id2enrvga6g5p7jsek1mau6u6rvnl0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qd4g2f2nu605p7oe2nhmbc29ahqrpo?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pjc0ch04k6g5pvqc9si2giec4ghbu8?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31f4mqea2me005pfs4j6ipsnpp2l22eo?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mrct8ffku605q4v625mbudg6tdos9g?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q93q7lhga5g5pn0adm7ccnjd2h8pd0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31psiqa8gkm105padr1q176h5sb1vrpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l47so5p30005p02ue4k3ugudalmnn0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pf1npma2a005p4qntmqmopb6edqr8o?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmnqrbgm6g5pnp7c5ne4ea1l9jotg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/6466616be03b13143132d9c9.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318kj1eilkc005nq2hc7g8iul73r1fu0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mg525p75ib05pjiq3khot0gn139pg0?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pcv0p41ig005npkm780956nr6h85uo?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30mqovg6m4o5g5og9qpak0ntscg1aero?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v2/user/me> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/system/config> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v2/user/me> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/search/querytrending?source=Explore&search_type=trend&last_query=&last_query_time=0&word_request_situation=FIRST_ENTER&hint_word=&hint_word_type=&hint_word_request_id=> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://pages.xiaohongshu.com/data/xhs_pc_nps> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/global/config> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://edith.xiaohongshu.com/api/sns/web/racing_report> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/NPS.0fee7ba1.css>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pj2tjbk3q005ocljlf416e43k1jf10?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q4uqv1dg06g5okb4kv8cve40eb7p18?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/64f7fc1b85200f7e195e624c.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/63e09bdd77e8ec315cad0392.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qeho3edga005qaa90vdtgolbliddd0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mgb07rf68605p2nbj0qh487h0ad9q0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pr2bp3d40005q9l2k9do72o2akk54g?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0t2dtp4s005pmaqot7ebsskfnk4sg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qcnvi7ono6g5pc3q1874vp3hbsp0hg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31couaigo0s0049kv5psmotasmkir3b8?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mr9p41rl86g5o2sir408dshikpeiq0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qd4g2f2nu605p7oe2nhmbc29ahqrpo?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pjc0ch04k6g5pvqc9si2giec4ghbu8?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31f4mqea2me005pfs4j6ipsnpp2l22eo?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mrct8ffku605q4v625mbudg6tdos9g?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31psiqa8gkm105padr1q176h5sb1vrpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l47so5p30005p02ue4k3ugudalmnn0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pf1npma2a005p4qntmqmopb6edqr8o?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmnqrbgm6g5pnp7c5ne4ea1l9jotg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/6466616be03b13143132d9c9.jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318kj1eilkc005nq2hc7g8iul73r1fu0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mg525p75ib05pjiq3khot0gn139pg0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pcv0p41ig005npkm780956nr6h85uo?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31js2n40m2o5g5nus4lug8ukl5i9q0qg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g0odl89gi4g5ph1ssr1okmkk2ahp5g?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/b38cd520632fe0ce51379fb2df743baa67f09f3d.png?imageView2/2/w/100/format/webp>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31id2enrvga6g5p7jsek1mau6u6rvnl0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31q93q7lhga5g5pn0adm7ccnjd2h8pd0?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30mqovg6m4o5g5og9qpak0ntscg1aero?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/cd255d0e201935e0d852bd371f18c198.jpg?imageView2/2/w/360/format/webp> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-video-qc.xhscdn.com/fe-platform-file/104101b831qffaqeqga06an4b0q2g0000000001dt3bmd4>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/sbtsource>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/as/v1/f218/f/public/ds.js> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/f218/f/public/ds.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/f218/a15/public/04b29480233f4def5c875875b6bdc3b1.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/NPS.f09209ea.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/9262.aad9369a.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/3e44/public/bf7d4e32677698655a5cadc581fd09b3.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v2/fp/962356ead351e7f2422eb57edff6982d.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/395.6ce4f169.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/3644.f87c3808.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/sec/v1/scripting> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/3644.d7f699a4.css>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/cd255d0e201935e0d852bd371f18c198.jpg?imageView2/2/w/360/format/webp>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://pages.xiaohongshu.com/data/xhs_pc_nps>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/system/config>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/global/config>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/scripting>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/racing_report>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/as/v1/f218/f/public/ds.js>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v2/user/me>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v2/user/me>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/querytrending?source=Explore&search_type=trend&last_query=&last_query_time=0&word_request_situation=FIRST_ENTER&hint_word=&hint_word_type=&hint_word_request_id=>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-video-qc.xhscdn.com/fe-platform/ed8fe781ce9e16c1bfac2cd962f0721edabe2e49.ico> (resource type: other, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-video-qc.xhscdn.com/fe-platform/ed8fe781ce9e16c1bfac2cd962f0721edabe2e49.ico>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET http://127.0.0.1:9222/json/version> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET http://127.0.0.1:54345/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET chrome-extension://invalid/> (resource type: fetch)
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:15:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:44 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://as.xiaohongshu.com/api/sec/v1/shield/webprofile> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://as.xiaohongshu.com/api/sec/v1/shield/webprofile>
+2025-12-26 21:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaohongshu.com/explore> (referer: None) ['playwright']
+2025-12-26 21:15:45 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:46 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:46 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://fe.xiaohongshu.com/faas/proto/json-to-proto-json-to-proto/proxy> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:46 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe.xiaohongshu.com/faas/proto/json-to-proto-json-to-proto/proxy>
+2025-12-26 21:15:47 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:47 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/search/querytrending?source=Explore&search_type=trend&last_query=&last_query_time=0&word_request_situation=FIRST_ENTER&hint_word=%E7%A5%9E%E5%A5%87%E5%8A%A8%E7%89%A9%E5%9C%A8%E5%93%AA%E9%87%8C&hint_word_type=firstEnterOther%23trendingSavAggRecall%2367e8c133000000001c00bfc9%231%230&hint_word_request_id=2009027d-6dd5-458c-a8a5-7f40fe4e0ca0%231766754944240> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/querytrending?source=Explore&search_type=trend&last_query=&last_query_time=0&word_request_situation=FIRST_ENTER&hint_word=%E7%A5%9E%E5%A5%87%E5%8A%A8%E7%89%A9%E5%9C%A8%E5%93%AA%E9%87%8C&hint_word_type=firstEnterOther%23trendingSavAggRecall%2367e8c133000000001c00bfc9%231%230&hint_word_request_id=2009027d-6dd5-458c-a8a5-7f40fe4e0ca0%231766754944240>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/search/recommend?keyword=%E7%94%B5%E5%BD%B1> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/recommend?keyword=%E7%94%B5%E5%BD%B1>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:49 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:54 [xhs_comment] INFO: 搜索框填充成功，关键词：电影
+2025-12-26 21:15:54 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:54 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/6875.cbc24dee.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/4002.8a1bc1ea.css> (resource type: stylesheet, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/4002.dc77952a.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/Search.df9899fe.css> (resource type: stylesheet, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Search.18059294.js> (resource type: script, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/4002.8a1bc1ea.css>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/6875.cbc24dee.js>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/Search.18059294.js>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/css/async/Search.df9899fe.css>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/js/async/4002.dc77952a.js>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/board/user?user_id=60dd67a9000000000101d510&num=15&page=1> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://edith.xiaohongshu.com/api/sns/web/v1/search/onebox> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://edith.xiaohongshu.com/api/sns/web/v1/search/notes> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://fe-video-qc.xhscdn.com/fe-platform/ed8fe781ce9e16c1bfac2cd962f0721edabe2e49.ico> (resource type: other, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/v1/search/filter?keyword=%E7%94%B5%E5%BD%B1&search_id=2frqk0p876681lndjiyhs> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://fe-video-qc.xhscdn.com/fe-platform/ed8fe781ce9e16c1bfac2cd962f0721edabe2e49.ico>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/board/user?user_id=60dd67a9000000000101d510&num=15&page=1>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/onebox>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/filter?keyword=%E7%94%B5%E5%BD%B1&search_id=2frqk0p876681lndjiyhs>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:15:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/notes>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-na-i1.xhscdn.com/spectrum/1040g34o319ehu5sr5q0g5ov7i56pi28slvtln10?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=8be054b4b81d4523446abd324684f3b2&t=694e8a92> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-na-i1.xhscdn.com/1040g00831ponsa43406g5ojq56o8cu66sur3obg?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=241ac66aac617e8eeeb666db5f3a3562&t=694e8a92> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g00828lheqm0fu06g5ngire508burh6j9a5g?imageView2/1/h/132/w/480/format/jpg> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-na-i1.xhscdn.com/1040g2sg31ocneb8amgkg5pv3s2a3jojbl5rp7h8?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=f2bc4443f681b5379e5eecd66af5b65f&t=694e8a92> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-na-i1.xhscdn.com/1040g008315osdntk0s605ol03dq41qqbgft08l0?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=722157fe953fe18fe62189ee8a019f6d&t=694e8a92> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-na-i1.xhscdn.com/1040g00831o91kpjql8505poj93q7e9pnn1l2vf0?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=cef3d556567c8ec0094a314feefe4aba&t=694e8a92> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g00829907hfmg406g5o4lvsn08m62peatkc0?imageView2/1/h/132/w/480/format/jpg> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g008296ikhasg60005n83186k8u80q4cflm0?imageView2/1/h/132/w/480/format/jpg> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/e68bb308b47525efc668c1450c0b90a9/notes_pre_post/1040g3k831q8vvmfr7ob05q27md9nh4rqquji6r0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b37a5fa6936d51f00215f8f0cd837d61/notes_pre_post/1040g3k831q02o7vb7g8g5p6pg400a8u4ldnh7ug!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/8265a2ebcd723be99af49b90de9740cb/1040g2sg31obia1vp5mcg5n7h7hs67873ps11bko!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/5e20ddf6f0c7c298bbd125a1de1bb296/1040g2sg31nmjtjqt4s205pe05o4jbgj3m97ir1o!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/55e39e19a4d48a0367597644731d7482/notes_pre_post/1040g3k831qa21hd2745g5p7qicm1m23dl3enm9g!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/3932a84055065cf1286633a4b6d6cd66/notes_pre_post/1040g3k031pj861h23q6g5pg1dgl1hiecues3b78!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/06653049ef423ea3e551f69bc6e4ec35/1040g2sg31q6bl4en74005otd6la9t2ckalqbua8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/4cba369e4b935c3b8f6943a18a8cc43b/notes_pre_post/1040g3k031p3ahtt3ic6g5nfuq4i0985638nhcro!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/7d63244616136d6a45e7dc16b2167c07/spectrum/1040g0k031q7t1ivemu0040nosmedp86vqvpokbo!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/49e7458da8cf5c03be9d0d5c7c1f17b9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/ee73e1eda06cab9d38265635702aca4d/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b201537a0960146ffc4f6ba0192cb645/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/6d705042d687c0e7dfeb03d019e6772e/notes_pre_post/1040g3k031pknf5aukg1g48jo1mi56uo0ifs8po0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/9de4b689d9b23aac87a623ed2b8a50d4/1040g00831pk2dfil40005nh0fafg8n4gfv3ectg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/aa149e1fb6b4a7b8d8dbd51e70506363/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/e52ad029557cf08cd3e39ca3de6e0037/notes_pre_post/1040g3k031os1a5t11a005or3g9knqm0eup594ro!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/8749bc4cbcf9db2dbb8b63f6e3869e37/notes_pre_post/1040g3k031olrpdhr4q6g5n6hljj4bai66sudeng!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/5c5c29eb566533cd07624e5849601035/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/0b7f69f78dda19dd0c2fb3c731ad86dc/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/6ac8cee63f3b827cdeb9e42a6b201746/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://edith.xiaohongshu.com/api/sns/web/v1/search/notes> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-na-i1.xhscdn.com/1040g00831ponsa43406g5ojq56o8cu66sur3obg?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=241ac66aac617e8eeeb666db5f3a3562&t=694e8a92>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-na-i1.xhscdn.com/1040g2sg31ocneb8amgkg5pv3s2a3jojbl5rp7h8?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=f2bc4443f681b5379e5eecd66af5b65f&t=694e8a92>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-na-i1.xhscdn.com/1040g008315osdntk0s605ol03dq41qqbgft08l0?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=722157fe953fe18fe62189ee8a019f6d&t=694e8a92>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-na-i1.xhscdn.com/spectrum/1040g34o319ehu5sr5q0g5ov7i56pi28slvtln10?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=8be054b4b81d4523446abd324684f3b2&t=694e8a92>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g00828lheqm0fu06g5ngire508burh6j9a5g?imageView2/1/h/132/w/480/format/jpg>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31omnn1r2l8dg5q27md9nh4rq3gg59a0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qnnfii50q605p6pg400a8u485n2np8?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nf1st9i6g6g5n7h7hs67873ifdfclo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ppvo8pvl4005pe05o4jbgj3b8l8m28?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/754a6844f2f82a5ea3477a7020fc53ac/notes_pre_post/1040g3k831q8vvmfr7ob05q27md9nh4rqquji6r0!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p535v01ic005p7qicm1m23decqrnvg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kopmgmqjqdg5pg1dgl1hiecso06cqo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/c984c30ea122287194c6a27ebd315200/notes_pre_post/1040g3k831q02o7vb7g8g5p6pg400a8u4ldnh7ug!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mjvqbv44u105otd6la9t2cktrv1nmo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo316jdmjcu0q5g5nfuq4i0985695hcfe8?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hfcrhrr3s0040nosmedp86v7bhlvb0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/d75e3ae2b55c23336942f2c964fbe411/1040g2sg31obia1vp5mcg5n7h7hs67873ps11bko!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo310d6en2fmm005oafo9h0kvsprmjtf78?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmqv8r7o005o72pf7gbt5s1rhf8ro?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315ktpt690q5g5onbc387ov4rpv8md3g?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/5dd7697f65818b0001f5cc56.jpg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/44d0b9acab34d23e16847c6696f09246/1040g2sg31nmjtjqt4s205pe05o4jbgj3m97ir1o!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p1g8ui0ia6g5nh0fafg8n4gq5q9800?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0r2fi45e005podp477cfjo8of2tlg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1000g2jo2g1l3ijoi406g5or3g9knqm0ef2pjfgo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30vpmeqv9m06g5n6hljj4bai6vbhj2p0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p46vv14260042l95mn80i68t3dn3u0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/6dc85342240a7b5bec176485c75d3036/notes_pre_post/1040g3k831qa21hd2745g5p7qicm1m23dl3enm9g!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31i55nr8m6m004a2v0c951k48lpfnh0o?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/fffa3063970fd66e7fc0d386d70220e9/notes_pre_post/1040g3k031pj861h23q6g5pg1dgl1hiecues3b78!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/709a44209abe9cba5c3e6193aeb79786/1040g2sg31q6bl4en74005otd6la9t2ckalqbua8!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/0b56b624bf2f9e8bb23a9e6017e7e558/notes_pre_post/1040g3k031p3ahtt3ic6g5nfuq4i0985638nhcro!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/48db21c70938fd472c794e940f720e5d/spectrum/1040g0k031q7t1ivemu0040nosmedp86vqvpokbo!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/bd9fcb72861da6ee6a3a88aa979832f9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/3a8fd00aa7092f0035a7844ba7ca71e0/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/683d5d441ed16b630dfd90f0fc4babfe/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/901b9a8bd380c9684a901eed3d9932a4/notes_pre_post/1040g3k031pknf5aukg1g48jo1mi56uo0ifs8po0!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/12556426dafa9fc80743fd0a54bbab84/1040g00831pk2dfil40005nh0fafg8n4gfv3ectg!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/2bee8d70287567e29081e7a3fccb72f9/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/c23222812051acd430511c7e71dab2bc/notes_pre_post/1040g3k031os1a5t11a005or3g9knqm0eup594ro!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/aa6774aed29edd067238545f1040c994/notes_pre_post/1040g3k031olrpdhr4q6g5n6hljj4bai66sudeng!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/8a2ac5ffa5f75bc70481b0bf6ff8e8e4/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/27b964801885120d2871facb9d4ca601/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/bdf4707e561227f440dfaea9d4435b1d/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-na-i1.xhscdn.com/1040g00831o91kpjql8505poj93q7e9pnn1l2vf0?imageView2/1/h/132/w/480/format/jpg&ap=5&sc=HOT_QRY&sign=cef3d556567c8ec0094a314feefe4aba&t=694e8a92>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g00829907hfmg406g5o4lvsn08m62peatkc0?imageView2/1/h/132/w/480/format/jpg>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-search-i1.xhscdn.com/hot-query-image-crop-web/v2/1000g008296ikhasg60005n83186k8u80q4cflm0?imageView2/1/h/132/w/480/format/jpg>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31omnn1r2l8dg5q27md9nh4rq3gg59a0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qnnfii50q605p6pg400a8u485n2np8?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nf1st9i6g6g5n7h7hs67873ifdfclo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ppvo8pvl4005pe05o4jbgj3b8l8m28?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p535v01ic005p7qicm1m23decqrnvg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kopmgmqjqdg5pg1dgl1hiecso06cqo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mjvqbv44u105otd6la9t2cktrv1nmo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo316jdmjcu0q5g5nfuq4i0985695hcfe8?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hfcrhrr3s0040nosmedp86v7bhlvb0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo310d6en2fmm005oafo9h0kvsprmjtf78?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qbmqv8r7o005o72pf7gbt5s1rhf8ro?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315ktpt690q5g5onbc387ov4rpv8md3g?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/5dd7697f65818b0001f5cc56.jpg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p1g8ui0ia6g5nh0fafg8n4gq5q9800?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0r2fi45e005podp477cfjo8of2tlg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1000g2jo2g1l3ijoi406g5or3g9knqm0ef2pjfgo?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30vpmeqv9m06g5n6hljj4bai6vbhj2p0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p46vv14260042l95mn80i68t3dn3u0?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31i55nr8m6m004a2v0c951k48lpfnh0o?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/55e39e19a4d48a0367597644731d7482/notes_pre_post/1040g3k831qa21hd2745g5p7qicm1m23dl3enm9g!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/5e20ddf6f0c7c298bbd125a1de1bb296/1040g2sg31nmjtjqt4s205pe05o4jbgj3m97ir1o!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/e68bb308b47525efc668c1450c0b90a9/notes_pre_post/1040g3k831q8vvmfr7ob05q27md9nh4rqquji6r0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/3932a84055065cf1286633a4b6d6cd66/notes_pre_post/1040g3k031pj861h23q6g5pg1dgl1hiecues3b78!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b37a5fa6936d51f00215f8f0cd837d61/notes_pre_post/1040g3k831q02o7vb7g8g5p6pg400a8u4ldnh7ug!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/55e39e19a4d48a0367597644731d7482/notes_pre_post/1040g3k831qa21hd2745g5p7qicm1m23dl3enm9g!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/3932a84055065cf1286633a4b6d6cd66/notes_pre_post/1040g3k031pj861h23q6g5pg1dgl1hiecues3b78!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/06653049ef423ea3e551f69bc6e4ec35/1040g2sg31q6bl4en74005otd6la9t2ckalqbua8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/8265a2ebcd723be99af49b90de9740cb/1040g2sg31obia1vp5mcg5n7h7hs67873ps11bko!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/7d63244616136d6a45e7dc16b2167c07/spectrum/1040g0k031q7t1ivemu0040nosmedp86vqvpokbo!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b37a5fa6936d51f00215f8f0cd837d61/notes_pre_post/1040g3k831q02o7vb7g8g5p6pg400a8u4ldnh7ug!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/6d705042d687c0e7dfeb03d019e6772e/notes_pre_post/1040g3k031pknf5aukg1g48jo1mi56uo0ifs8po0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b201537a0960146ffc4f6ba0192cb645/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/e52ad029557cf08cd3e39ca3de6e0037/notes_pre_post/1040g3k031os1a5t11a005or3g9knqm0eup594ro!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/4cba369e4b935c3b8f6943a18a8cc43b/notes_pre_post/1040g3k031p3ahtt3ic6g5nfuq4i0985638nhcro!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/aa149e1fb6b4a7b8d8dbd51e70506363/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/6ac8cee63f3b827cdeb9e42a6b201746/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/9de4b689d9b23aac87a623ed2b8a50d4/1040g00831pk2dfil40005nh0fafg8n4gfv3ectg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/5e20ddf6f0c7c298bbd125a1de1bb296/1040g2sg31nmjtjqt4s205pe05o4jbgj3m97ir1o!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/e68bb308b47525efc668c1450c0b90a9/notes_pre_post/1040g3k831q8vvmfr7ob05q27md9nh4rqquji6r0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/06653049ef423ea3e551f69bc6e4ec35/1040g2sg31q6bl4en74005otd6la9t2ckalqbua8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/8265a2ebcd723be99af49b90de9740cb/1040g2sg31obia1vp5mcg5n7h7hs67873ps11bko!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/7d63244616136d6a45e7dc16b2167c07/spectrum/1040g0k031q7t1ivemu0040nosmedp86vqvpokbo!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/9de4b689d9b23aac87a623ed2b8a50d4/1040g00831pk2dfil40005nh0fafg8n4gfv3ectg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/8749bc4cbcf9db2dbb8b63f6e3869e37/notes_pre_post/1040g3k031olrpdhr4q6g5n6hljj4bai66sudeng!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/0b7f69f78dda19dd0c2fb3c731ad86dc/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/6d705042d687c0e7dfeb03d019e6772e/notes_pre_post/1040g3k031pknf5aukg1g48jo1mi56uo0ifs8po0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/5c5c29eb566533cd07624e5849601035/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/49e7458da8cf5c03be9d0d5c7c1f17b9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/4cba369e4b935c3b8f6943a18a8cc43b/notes_pre_post/1040g3k031p3ahtt3ic6g5nfuq4i0985638nhcro!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/bd9fcb72861da6ee6a3a88aa979832f9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/e52ad029557cf08cd3e39ca3de6e0037/notes_pre_post/1040g3k031os1a5t11a005or3g9knqm0eup594ro!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/2bee8d70287567e29081e7a3fccb72f9/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/bdf4707e561227f440dfaea9d4435b1d/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/3a8fd00aa7092f0035a7844ba7ca71e0/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/aa149e1fb6b4a7b8d8dbd51e70506363/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/27b964801885120d2871facb9d4ca601/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/8a2ac5ffa5f75bc70481b0bf6ff8e8e4/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/683d5d441ed16b630dfd90f0fc4babfe/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/ee73e1eda06cab9d38265635702aca4d/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/55e39e19a4d48a0367597644731d7482/notes_pre_post/1040g3k831qa21hd2745g5p7qicm1m23dl3enm9g!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/6ac8cee63f3b827cdeb9e42a6b201746/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/3932a84055065cf1286633a4b6d6cd66/notes_pre_post/1040g3k031pj861h23q6g5pg1dgl1hiecues3b78!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/5e20ddf6f0c7c298bbd125a1de1bb296/1040g2sg31nmjtjqt4s205pe05o4jbgj3m97ir1o!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/e68bb308b47525efc668c1450c0b90a9/notes_pre_post/1040g3k831q8vvmfr7ob05q27md9nh4rqquji6r0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b201537a0960146ffc4f6ba0192cb645/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/8749bc4cbcf9db2dbb8b63f6e3869e37/notes_pre_post/1040g3k031olrpdhr4q6g5n6hljj4bai66sudeng!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/06653049ef423ea3e551f69bc6e4ec35/1040g2sg31q6bl4en74005otd6la9t2ckalqbua8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/8265a2ebcd723be99af49b90de9740cb/1040g2sg31obia1vp5mcg5n7h7hs67873ps11bko!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/0b7f69f78dda19dd0c2fb3c731ad86dc/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/5c5c29eb566533cd07624e5849601035/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/7d63244616136d6a45e7dc16b2167c07/spectrum/1040g0k031q7t1ivemu0040nosmedp86vqvpokbo!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b37a5fa6936d51f00215f8f0cd837d61/notes_pre_post/1040g3k831q02o7vb7g8g5p6pg400a8u4ldnh7ug!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/9de4b689d9b23aac87a623ed2b8a50d4/1040g00831pk2dfil40005nh0fafg8n4gfv3ectg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/49e7458da8cf5c03be9d0d5c7c1f17b9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/4cba369e4b935c3b8f6943a18a8cc43b/notes_pre_post/1040g3k031p3ahtt3ic6g5nfuq4i0985638nhcro!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/aa149e1fb6b4a7b8d8dbd51e70506363/notes_pre_post/1040g3k831q5c3jimg0705podp477cfjot3rdgd0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/ee73e1eda06cab9d38265635702aca4d/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/e52ad029557cf08cd3e39ca3de6e0037/notes_pre_post/1040g3k031os1a5t11a005or3g9knqm0eup594ro!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/6d705042d687c0e7dfeb03d019e6772e/notes_pre_post/1040g3k031pknf5aukg1g48jo1mi56uo0ifs8po0!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/6ac8cee63f3b827cdeb9e42a6b201746/notes_pre_post/1040g3k031pusk7db7g1g48c5p57sohj4rkqaijg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/v1/search/notes>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/8749bc4cbcf9db2dbb8b63f6e3869e37/notes_pre_post/1040g3k031olrpdhr4q6g5n6hljj4bai66sudeng!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b201537a0960146ffc4f6ba0192cb645/notes_pre_post/1040g3k031qbddlhpn4605onbc387ov4riqpfgsg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/0b7f69f78dda19dd0c2fb3c731ad86dc/1040g2sg31nperor452e04a2v0c951k48q4s7kdg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/5c5c29eb566533cd07624e5849601035/spectrum/1040g0k031q2usg6tmu0042l95mn80i68tm6u2i8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ppvo8pvl4005pe05o4jbgj3b8l8m28?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0r2fi45e005podp477cfjo8of2tlg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/356d230dea68b574668d074e92fcf400/1040g2sg31mmn54db584g5q0lv74injopknrvh38!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b856aedee296ceff03026bcd075acc9c/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/002c6ad49f507a2de1229eaf90211ef2/1040g2sg31nmjtjqt4s005pe05o4jbgj3d2tfv88!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/cb27b2f7d3e68591a0bbb3b018a58e0b/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/57aef0f238b20b82faf1e03634b214ab/notes_pre_post/1040g3k031psc589e4k005podp477cfjojim2fjg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/9360ecb0fc1069552f94bb8afa20d26a/notes_pre_post/1040g3k831ouqpihv10dg5n9pdkbk7sf3jn99lmg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/49e7458da8cf5c03be9d0d5c7c1f17b9/spectrum/1040g0k031q6i3dpm6u0g5oafo9h0kvsp675p670!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lp5duuj58005q0lv74injopq8hssko?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/ca081e674741371a70a8e794c034dc5e/1040g2sg31mmn54db584g5q0lv74injopknrvh38!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/3ece7657903fb5b911fd35dac4e113d3/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/94b4a273ec56fb0be0a4a5ba6c8aebe3/1040g2sg31nmjtjqt4s005pe05o4jbgj3d2tfv88!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/7988aef068a0ddc53402297ecbd51fbb/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/f4ebfcca21b661b36798e6c6d5b24b52/notes_pre_post/1040g3k031psc589e4k005podp477cfjojim2fjg!nc_n_webp_prv_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/ee73e1eda06cab9d38265635702aca4d/spectrum/1040g34o31oa3ccmokq105o72pf7gbt5sqp3lff8!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ppvo8pvl4005pe05o4jbgj3b8l8m28?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m0r2fi45e005podp477cfjo8of2tlg?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lp5duuj58005q0lv74injopq8hssko?imageView2/2/w/80/format/jpg?imageView2/2/w/60/format/webp|imageMogr2/strip>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/356d230dea68b574668d074e92fcf400/1040g2sg31mmn54db584g5q0lv74injopknrvh38!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/002c6ad49f507a2de1229eaf90211ef2/1040g2sg31nmjtjqt4s005pe05o4jbgj3d2tfv88!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b856aedee296ceff03026bcd075acc9c/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/9360ecb0fc1069552f94bb8afa20d26a/notes_pre_post/1040g3k831ouqpihv10dg5n9pdkbk7sf3jn99lmg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/356d230dea68b574668d074e92fcf400/1040g2sg31mmn54db584g5q0lv74injopknrvh38!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/57aef0f238b20b82faf1e03634b214ab/notes_pre_post/1040g3k031psc589e4k005podp477cfjojim2fjg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/3ece7657903fb5b911fd35dac4e113d3/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/002c6ad49f507a2de1229eaf90211ef2/1040g2sg31nmjtjqt4s005pe05o4jbgj3d2tfv88!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/7988aef068a0ddc53402297ecbd51fbb/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_prv_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/b856aedee296ceff03026bcd075acc9c/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/57aef0f238b20b82faf1e03634b214ab/notes_pre_post/1040g3k031psc589e4k005podp477cfjojim2fjg!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/cb27b2f7d3e68591a0bbb3b018a58e0b/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://sns-webpic-qc.xhscdn.com/202512262116/cb27b2f7d3e68591a0bbb3b018a58e0b/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_mw_1> (resource type: image, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/002c6ad49f507a2de1229eaf90211ef2/1040g2sg31nmjtjqt4s005pe05o4jbgj3d2tfv88!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/b856aedee296ceff03026bcd075acc9c/notes_pre_post/1040g3k831q01uotr7udg5ppn6obndlaq3jp1aag!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/356d230dea68b574668d074e92fcf400/1040g2sg31mmn54db584g5q0lv74injopknrvh38!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/57aef0f238b20b82faf1e03634b214ab/notes_pre_post/1040g3k031psc589e4k005podp477cfjojim2fjg!nc_n_webp_mw_1>
+2025-12-26 21:16:00 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://sns-webpic-qc.xhscdn.com/202512262116/cb27b2f7d3e68591a0bbb3b018a58e0b/1040g00831qe2tdkn0a005ol00psmd7t9hdtue7g!nc_n_webp_mw_1>
+2025-12-26 21:16:02 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:02 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:04 [xhs_comment] DEBUG: 点击搜索按钮，等待结果加载...
+2025-12-26 21:16:04 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:04 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:05 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:05 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:16:09 [xhs_comment] DEBUG: 搜索结果加载完成，开始滚动
+2025-12-26 21:16:11 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:16:37 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-12-26 21:16:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:16:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:16:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:16:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:16:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:16:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:17:11 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:17:37 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-12-26 21:17:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:17:41 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:17:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:18:09 [xhs_comment] DEBUG: 第10次滚动
+2025-12-26 21:18:12 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:12 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:18:17 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:18:37 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-12-26 21:18:41 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://t2.xiaohongshu.com/api/v2/collect> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:41 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://t2.xiaohongshu.com/api/v2/collect>
+2025-12-26 21:18:42 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://edith.xiaohongshu.com/api/sns/web/unread_count> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:42 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://edith.xiaohongshu.com/api/sns/web/unread_count>
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png> (resource type: xhr, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:18:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://picasso-static.xiaohongshu.com/fe-platform/879b789b01030ed45ce198de8229cab980bc176f.png>
+2025-12-26 21:18:47 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://apm-fe.xiaohongshu.com/api/data> (resource type: fetch, referrer: https://www.xiaohongshu.com/)
+2025-12-26 21:18:47 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://apm-fe.xiaohongshu.com/api/data>
+2025-12-26 21:19:11 [xhs_comment] WARNING: 滚动超时（180.0秒），停止滚动
+2025-12-26 21:19:11 [xhs_comment] INFO: 滚动完成，共滚动14次
+2025-12-26 21:19:11 [xhs_comment] DEBUG: 滚动完成，开始解析数据
+2025-12-26 21:19:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-12-26 21:19:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 217,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 528250,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 216.030184,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 12, 26, 13, 19, 14, 16749, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 789,
+ 'log_count/INFO': 26,
+ 'log_count/WARNING': 46,
+ 'playwright/browser_count': 2,
+ 'playwright/context_count': 2,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 2,
+ 'playwright/context_count/remote/False': 2,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 401,
+ 'playwright/request_count/method/GET': 284,
+ 'playwright/request_count/method/POST': 117,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 32,
+ 'playwright/request_count/resource_type/image': 207,
+ 'playwright/request_count/resource_type/other': 2,
+ 'playwright/request_count/resource_type/script': 27,
+ 'playwright/request_count/resource_type/stylesheet': 5,
+ 'playwright/request_count/resource_type/xhr': 127,
+ 'playwright/response_count': 375,
+ 'playwright/response_count/method/GET': 258,
+ 'playwright/response_count/method/POST': 117,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 22,
+ 'playwright/response_count/resource_type/image': 191,
+ 'playwright/response_count/resource_type/other': 2,
+ 'playwright/response_count/resource_type/script': 27,
+ 'playwright/response_count/resource_type/stylesheet': 5,
+ 'playwright/response_count/resource_type/xhr': 127,
+ 'response_received_count': 1,
+ 'responses_per_minute': 0.2777777777777778,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2025, 12, 26, 13, 15, 37, 986565, tzinfo=datetime.timezone.utc)}
+2025-12-26 21:19:14 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-12-26 21:19:14 [scrapy-playwright] INFO: Closing download handler
+2025-12-26 21:19:14 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2025-12-26 21:19:14 [scrapy-playwright] INFO: Closing browser
+2025-12-26 21:19:14 [scrapy-playwright] DEBUG: Browser disconnected
+2025-12-26 21:19:14 [scrapy-playwright] INFO: Closing download handler
+2025-12-26 21:19:14 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2025-12-26 21:19:14 [scrapy-playwright] INFO: Closing browser
+2025-12-26 21:19:14 [scrapy-playwright] DEBUG: Browser disconnected

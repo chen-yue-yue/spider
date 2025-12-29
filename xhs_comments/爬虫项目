@@ -1,0 +1,7 @@
+搜索框：//div[@class='input-box']/input
+搜索按钮://div[@class='input-box']/div
+定位贴：//section[contains(@class,'note-item')]
+滚动容器：//div[contains(@class,'feeds-container')]
+定位页面底部：//div[contains(@class,'end-container')]
+贴链接:./div/a[2]/@href
+评论列表：//div[contains(@class,'comment-inner-container')]//span[contains(@class,'note-text')]/span/text()

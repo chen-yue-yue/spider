@@ -1,0 +1,19 @@
+cookie:select_city=110000; lianjia_ssid=cd2ff5dd-d418-41a6-b6b1-0ce242d71fd7; lianjia_uuid=d929ba72-679f-4718-8933-4901ec4ff338; Hm_lvt_46bf127ac9b856df503ec2dbf942b67e=1765436061; HMACCOUNT=3F18AC6E8ACD690D; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2219b0c307531211-0ff3e212874-26061b51-1821369-19b0c30753222cd%22%2C%22%24device_id%22%3A%2219b0c307531211-0ff3e212874-26061b51-1821369-19b0c30753222cd%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; _jzqa=1.787719326959594200.1765436061.1765436061.1765436061.1; _jzqc=1; _jzqckmp=1; _qzjc=1; crosSdkDT2019DeviceId=-t4vocm--1vlpj0-oiejge3gamr0gu6-h87tudo0r; _ga=GA1.2.1772040068.1765436072; _gid=GA1.2.1003414472.1765436072; login_ucid=2000000483328062; lianjia_token=2.00106395314529f8e301cebc0003005b4a; lianjia_token_secure=2.00106395314529f8e301cebc0003005b4a; security_ticket=F7faJSGEmkg8n4C7X6NlZ2JHsF7wxqYohfq+kJChVNK8thIUHKdQfkGFk98rmOq2Rb66ZavtxbU6L4Wsmh+DT2iB4XHF7efvBvSy1+2ZoLKNhax+YGjS4tcoqjvKq0URmBp340rtdyOoSsK6pEXn61ToA00V4HszD7ls14PgRn4=; ftkrc_=58a7b8d4-022b-42ee-90c9-4bcdb435ca79; lfrc_=5a67ae8f-1cf4-4aa8-96c3-4b86f1901c30; _qzja=1.1379139782.1765436061258.1765436061258.1765436061258.1765436061258.1765436137158.0.0.0.2.1; _qzjb=1.1765436061258.2.0.0.0; _qzjto=2.1.0; _jzqb=1.2.10.1765436061.1; Hm_lpvt_46bf127ac9b856df503ec2dbf942b67e=1765436137; srcid=eyJ0Ijoie1wiZGF0YVwiOlwiZjg1ZjllNDhjZjM2ZDNjZTE0ZjI1OTVjNmNhNjM0ZDFmNTZhNGJkMWY1OGQ5MDdmMmFjMjBkYWRhOWRhZTg1NjVhMmRkMzJjZTA4NmY2NTJhZTFhOWFlZWY2NDQzMTUyMjBkYjFlYTJhNGNiNDkwYTdhYWJmZmY0NzZlZjNkNzFkYjYwMjJjOGI3YTFhMjRjZTc3YTcwYzNjMWZlNWEwZTYzZTkyMmE3ZWVmOTYwMDk5ODM5N2E2MWNiZTExZGJiN2I3OWM2MzE0MWNiNGVjMjQwY2RhYTQyZmY3MDgyNzA0ZTc4MDBiYTFmMzRjZTIzMWZkOGI1ZTcwZDUyOWFkYlwiLFwia2V5X2lkXCI6XCIxXCIsXCJzaWduXCI6XCI5MzJlMjExMlwifSIsInIiOiJodHRwczovL2JqLmxpYW5qaWEuY29tLyIsIm9zIjoid2ViIiwidiI6IjAuMSJ9; _ga_KJTRWRHDL1=GS2.2.s1765436072$o1$g1$t1765436148$j60$l0$h0; _ga_QJN1VP0CMS=GS2.2.s1765436072$o1$g1$t1765436148$j60$l0$h0
+静态数据
+容器：class:info clear
+获取详情页:./div[@class = 'title']/a/@href
+房屋标题：./div[@class = 'title']/a/text()
+房屋标签（如：必看好房）:./div[@class = 'tag']//text()
+总价:.//div[@class = 'totalPrice totalPrice2']//text() 要把数字和年并在一起
+单价:.//div[contains(@class,'unitPrice')]
+所在位置（如：区域/小区）：.//span[@class='positionIcon']//text()
+房屋格局（几室几厅）房屋面积、朝向、装修状态、楼层、楼栋类型（板楼/塔楼等）:要用正则提取
+.//div[@class ='houseInfo']/text()
+是否近地铁://div[@class='areaName']/a[contains(@class,'supplement')]/text()
+免税类型（房本满五年等）:
+//div[@class='content']/li[5]/span[2]/text()
+是否随时看房://div[@class='visitTime']/span[@class='info']/text()
+
+
+
+

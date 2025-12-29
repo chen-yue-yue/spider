@@ -1,0 +1,33 @@
+案例url: //td[@class='a_left']/a/@href
+定位当前页://div[@class='fenye']/span[@class='current']
+定位下一页按钮://div[@class='fenye']/span[@class='disabled' and contains(text(),'下一页»')]
+父容器：//table[@class='infotable']/tbody
+案例编号:./tr[2]/td
+被浏览次数:./tr[3]/td
+案例名称:./tr[4]/td
+译名:./tr[5]/td
+案例作者:./tr[6]/td
+作者单位:./tr[7]/td
+指导者:./tr[8]/td
+译者:./tr[9]/td
+案例企业名称:./tr[10]/td
+行业:./tr[11]/td
+规模:./tr[12]/td
+案例涉及的职能领域:./tr[13]/td
+案例语种:./tr[14]/td
+案例正文页数（页）:./tr[15]/td
+案例类型:./tr[16]/td
+中文关键词:./tr[17]/td
+英文关键词:./tr[18]/td
+中文摘要:./tr[19]/td
+英文摘要:./tr[20]/td
+适用对象:./tr[21]/td
+编写方式:./tr[22]/td
+案例年代:./tr[23]/td
+适用课程:./tr[24]/td
+案例涉及理论知识:./tr[25]/td
+案例入库时间:./tr[26]/td
+查看全文:./tr[27]/td/a/@href
+查看案例使用说明:./tr[28]/td/a/@href
+查看微案例英文正文:./tr[29]/td/a/@href
+查看微案例英文使用说明:./tr[30]/td/a/@href

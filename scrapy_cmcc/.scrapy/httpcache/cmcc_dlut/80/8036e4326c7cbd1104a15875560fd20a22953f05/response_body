@@ -1,0 +1,473 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>中国管理案例共享中心</title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tab1.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/formValidator.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.luara.0.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/banner.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("#btnSelContent").click(function () {
+            var s = $("#txtContent").val();
+            if (s.length <= 0) {
+                alert("请填写内容");
+                return false;
+            }
+            document.getElementById("formSel").submit();
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="top">
+
+<div class="mid">
+    <div class="logo"><a href="/Home/Index"><img src="/img/logo.png" /></a></div>
+    <div class="top_r">
+                <div class="top_r_t">
+                    <a href="/english/enindex.htm" target="_blank">· English</a>
+                    <a href="/Home/Index">· 中文</a>
+                </div>
+                <div class="top_r_b">
+                    <form action="/Login/ULogin" method="post">
+                        <input class="log_name1" type="text" required="required" name="username" id="username" placeholder="用户名" />
+                        <input class="log_pass1" type="password" required="required" name="password" id="password" placeholder="密码" />
+                        <input class="log_sub1" type="submit" id="btnLogin" value="登录" />
+                    </form>
+                    <p><a href="/Login/Register">注册</a>&nbsp;&nbsp;<a href="/Login/Forget">忘记密码</a></p>
+                </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="nav">
+<div class="mid">
+    <ul>
+        <li><a href="/Home/Index">首页</a></li>
+
+        <li>
+            <a href="#">中心概况</a>
+            <ul>
+                            <li><a href="/AboutUs/Index/6-15">中心简介</a></li>
+                            <li><a href="/AboutUs/Index/6-16">组织结构</a></li>
+                            <li><a href="/AboutUs/Index/6-17">愿景与使命</a></li>
+                            <li><a href="/AboutUs/Index/6-18">中心功能</a></li>
+                            <li><a href="/AboutUs/Index/6-41">申请加入</a></li>
+                            <li><a href="/AboutUs/Index/6-42-43">投稿须知</a></li>
+
+                <li><a href="/AboutUs/Speaker">专家库</a></li>
+                <li><a href="/Academics/Index/1/0">联盟</a></li>
+                <li><a href="/Seminars/Index/1/0">研究会</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例库</a>
+            <ul>
+                <li><a href="/Cases/Search">高级搜索</a></li>
+                <li><a href="/Cases/Classification">案例分类</a></li>
+                <li><a href="/Cases/Latest/1">最新案例</a></li>
+                <li><a href="/Cases/Excellent/1">百优案例</a></li>
+                <li><a href="/Cases/Hot/1">热点案例</a></li>
+                <li><a href="/Cases/Fine/1">精品案例</a></li>
+                <li><a href="/Cases/Movies/1">视频案例</a></li>
+                <li><a href="/Cases/MCases/1">微案例</a></li>
+                <li><a href="/DailyExpert/Index">日常案例评审</a></li>
+                <li><a href="/Cases/WareCertApplicate">入库证明申请</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例精品课</a>
+            <ul>
+                <li><a href="/CaseVideos/Search">高级搜索</a></li>
+                <li><a href="/CaseVideos/Classification">课程分类</a></li>
+                <li><a href="/CaseVideos/Index/1">最新视频</a></li>
+                <li><a href="/CaseVideos/Hot/1">热点视频</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例教学</a>
+            <ul>
+                <li><a href="/Excellent/Index">百优案例</a></li>
+                <li><a href="/Competition/Index" target="_blank">精英赛</a></li>
+                <li><a href="/Training/Index" target="_blank">师资培训</a></li>
+                <li><a href="/GoodCourse/Index">案例精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">案例研究</a>
+            <ul>
+                <li><a href="/AnnualMeeting/Index" target="_blank">学术年会</a></li>
+                <li><a href="http://journal26.magtechjournal.com/glalyjypl/CN/home?sid_for_share=99125_3" target="_blank">期刊</a></li>
+                <li><a href="/Analysis/Index/1">企业基地</a></li>
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#">在线投稿</a>
+            <ul>
+                <li><a href="/Daily/DailyUserConNewA">日常案例</a></li>
+                <li><a href="/User/MemberHunExceManage">百优案例</a></li>
+				<li><a href="/KeyProject/Index">百优重点项目</a></li>
+                <li><a href="/AMeetingManger/Index">学术年会</a></li>
+                <li><a href="/QualityCourses/Index">精品课</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/Cooperation/Index">赞助与合作</a>
+
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="banner">
+<div class="mid">
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/微信图片_20240426125136.png" alt="第一张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner2.png" alt="第二张图片" /></a></li>
+                    <li><a href="#"><img src="http://admin.cmcc-dlut.cn/upload/others/websiteHeader/banner3.png" alt="第三张图片" /></a></li>
+
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            $(".example").luara({ width: "1003", height: "250", interval: 4000, selected: "seleted" });
+
+        });
+    </script>
+</div>
+
+    </div>
+
+    <div class="main">
+        <div class="mid">
+            <div class="main_l">
+                <div class="fenlei">
+                    <div class="tit_22"><span>案例库</span></div>
+                    <div class="bg_con1">
+                        <ul class="fenlei_con1">
+<li><a href="/Cases/Search">高级搜索</a></li>
+<li><a href="/Cases/Classification">案例分类</a></li>
+<li><a href="/Cases/Latest/1">最新案例</a></li>
+<li><a href="/Cases/Excellent/1">百优案例</a></li>
+<li><a href="/Cases/Hot/1">热点案例</a></li>
+<li><a href="/Cases/Fine/1">精品案例</a></li>
+<li><a href="/Cases/MCases/1">微案例</a></li>
+<li><a href="/Cases/Movies/1">视频案例</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="main_r">
+                <div class="tit_nav">
+                    <span class="tit_l">您所在位置：</span><a href="/Home/Index">首页</a><b>></b><span>最新案例（查询到有10222个案例）</span>
+                </div>
+                <div class="content_box">
+                    <div class="search_box">
+                        <form id="formSel" action="/Cases/SelContent2" method="post">
+                            <label>站内搜索：</label> <input type="text" style="width:450px;" class="shuru" placeholder="请输入案例题目、案例作者、作者单位、关键词、行业、规模、适用课程" name="txtContent" id="txtContent" /><input value="搜索" type="submit" class="tijiao" id="btnSelContent" /><a class="gaoji" href="/Cases/Search">高级搜索</a>
+                        </form>
+                    </div>
+                    <div class="result1">
+                        <table>
+                            <tr>
+                                <th width="15%">案例编号</th>
+                                <th width="50%">案例名称</th>
+                                <th width="20%">作者</th>
+                                <th width="15%">发布日期</th>
+                            </tr>
+                                        <tr>
+                                            <td style="text-align:left;">STR-1780</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7161" target="_blank">
+“数”造餐饮：百胜中国“战略护城”之道                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+詹学刚，艾丹，张奕...                                            </td>
+                                            <td>2023年03月03日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">STR-1779</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7160" target="_blank">
+智辉科技：扎根吉林大地，闯出“数商兴农”之路                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+张丽，王昆，盖国凤...                                            </td>
+                                            <td>2023年03月03日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">MKT-1113</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7159" target="_blank">
+从“碰瓷大牌”到“国货之光”：珀莱雅品牌的翻身之路                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+余海晴，李颖瑞                                            </td>
+                                            <td>2023年03月03日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0720</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7158" target="_blank">
+C端积累到进驻B端：蓝墨的商业模式探索之旅                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+李晓文，叶伟剑                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">STR-1778</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7157" target="_blank">
+上过大学的肥料，山东农大肥业数字化建设之路                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+王洪生，丁方军，董...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">STR-1776</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7156" target="_blank">
+“数”一“数”二：AI计量赋能众加利数字化转型                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+张和平，薛雅沛，黄...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0719</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7155" target="_blank">
+双元价值：“银巢”养老商业模式的持续之道                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+曲然，付裕                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0718</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7154" target="_blank">
+亚朵村的茶：亚朵集团创新IP化社会创业模式                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+王振源，崔圣仪                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0717</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7153" target="_blank">
+天高地广，素履以往：尹兆利的创业之途                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+郭玲玲，罗婧桐，杨...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">MSL-0096</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7152" target="_blank">
+“提放保”：风险管理打造小微企业融资续贷的“独角兽...                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+王丛，董芳麟，戈萌...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0716</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7151" target="_blank">
+“化整为零，从零到整”，彭建华的连续创业之路                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+谌飞龙，陈松，熊家...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0715</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7150" target="_blank">
+“扶”农到“服”农：锦泰期货助力乡村振兴实践探索                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+卞曰瑭，林月月，戎...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">EPSM-0714</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7149" target="_blank">
+因势利导，汇磅礴之川——汇川技术的顺应时代创新之路                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+王旭超，凌畅，冯子...                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">TEC-0111</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7148" target="_blank">
+羊尾巴的秘密：区块链何以重建农产品溯源体系                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+东梅，吴旭冉，任旭                                            </td>
+                                            <td>2023年03月02日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">CSR-0179</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7147" target="_blank">
+ESG如何解燃“煤”之急？——双碳背景下“华润电力...                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+张倩，朱新超，魏媛...                                            </td>
+                                            <td>2023年03月01日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">PJMT-0124</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7146" target="_blank">
+从连霍高速项目方案的变更，看公路工程精细化管理的实...                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+李玥，李宏欣，杨彬...                                            </td>
+                                            <td>2023年03月01日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">PJMT-0123</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7144" target="_blank">
+激光传奇：行业隐形冠军的危与机                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+杨治，樊茗玥，周双...                                            </td>
+                                            <td>2023年03月01日</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">PJMT-0122</td>
+                                            <td class="a_left"><a href="/Cases/Detail/7143" target="_blank">
+复杂性的涌现与降解：福建高速公路项目群监管的数字化...                                                </a></td>
+                                            
+                                            <td style="text-align:left;">
+刘小峰，王鹏航，邱...                                            </td>
+                                            <td>2023年03月01日</td>
+
+                                        </tr>
+
+                        </table>
+                        <div class="fenye">
+                            <a href='/Cases/Latest/1'>首页</a><a href='/Cases/Latest/173'>«上一页</a><a href='/Cases/Latest/169'>169</a><a href='/Cases/Latest/170'>170</a><a href='/Cases/Latest/171'>171</a><a href='/Cases/Latest/172'>172</a><a href='/Cases/Latest/173'>173</a><span class="current">174</span><a href='/Cases/Latest/175'>175</a><a href='/Cases/Latest/176'>176</a><a href='/Cases/Latest/177'>177</a><a href='/Cases/Latest/178'>178</a><a href='/Cases/Latest/175'>下一页»</a><a href='/Cases/Latest/568'>尾页</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <div class="f_box1">
+        <div class="help">
+            <div class="tit_4 bg_ico1"><span><b>帮助</b></span></div>
+            <ul>
+                <li><a href="/Document/Website#111">注册须知</a></li>
+                <li><a href="/Home/Detail/158">网站新手如何注册用户</a></li>
+                <li><a href="/Document/Website#112">关于网站的使用</a></li>
+                <li><a href="/Document/Website#222">关于案例搜索</a></li>
+                <li><a href="/Document/Website#333">如何管理我的帐户？</a></li>
+                <li><a href="/Document/Website#555">共享中心收取会员费吗？</a></li>
+
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico2"><span><b>关于案例教学</b></span></div>
+            <ul>
+                <li><a href="/Document/Method">方法介绍</a></li>
+                <li><a href="/Document/Difference">案例教学与传统教学的区别</a></li>
+                <li><a href="/Document/Learn">关于案例学习方法</a></li>
+                <li><a href="/Document/Book">书籍推荐</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico3"><span><b>关于案例研究</b></span></div>
+            <ul>
+                <li><a href="/Document/ResMethod">什么是案例研究方法？</a></li>
+                <li><a href="/Document/Design">如何设计案例研究？</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <div class="tit_4 bg_ico4"><span><b>新手入门</b></span></div>
+            <ul>
+                <li><a href="/Document/Newcomer">日常案例在线投稿流程</a></li>
+                <li><a href="/Document/QueryProgress">如何查询评审进度</a></li>
+                <li><a href="/Document/Entrance">专家评审入口</a></li>
+                <li><a href="/Document/QuestionAnswer">Q&A</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="f_box2">
+
+        <p>
+            <a href="http://beian.miit.gov.cn" target="_blank">辽ICP备2022005917号-1</a><br />总访问量：83386635
+           
+        </p>
+        <a href="#"><img src="/img/link/weibo.png" /></a> <a href="#"><img src="/img/link/weixin.png" /></a>
+
+    </div>
+    <div style="display:none;">
+        <p><a href="http://www.lanp.cn">大连网站建设</a>  <a href="http://www.lanp.cn">大连网站制作</a> <a href="http://www.lanp.cn">大连网站设计</a> <a href="http://www.lanp.cn">大连网站托管</a> <a href="http://www.lanp.cn">大连网站公司</a> <a href="http://www.lanp.cn">大连建站</a> <a href="http://www.lanp.cn">大连手机建站</a> <a href="http://www.lanp.cn">大连微信营销</a> <a href="http://www.lanp.cn">大连自媒体</a></p>
+        <p><a href="http://www.lanp.com.cn">大连网站建设</a>  <a href="http://www.lanp.com.cn">大连网站制作</a> <a href="http://www.lanp.com.cn">大连网站设计</a> <a href="http://www.lanp.com.cn">大连网站托管</a> <a href="http://www.lanp.com.cn">大连网站公司</a> <a href="http://www.lanp.com.cn">大连建站</a> <a href="http://www.lanp.com.cn">大连手机建站</a> <a href="http://www.lanp.com.cn">大连微信营销</a> <a href="http://www.lanp.com.cn">大连自媒体</a></p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>
