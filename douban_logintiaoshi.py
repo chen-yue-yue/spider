@@ -42,7 +42,7 @@ def switch_to_account_login():
 
 ## 输入用户名和密码，点击登录
 def submit_username_and_password():
-    username_element = wait_element_visibility(By.NAME, "")
+    username_element = wait_element_visibility(By.NAME, " ")
     password_element = wait_element_visibility(By.ID, "")
     slow_input(username_element, "username")
     slow_input(password_element, "password")
