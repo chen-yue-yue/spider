@@ -42,8 +42,8 @@ def switch_to_account_login():
 
 ## 输入用户名和密码，点击登录
 def submit_username_and_password():
-    username_element = wait_element_visibility(By.NAME, "13643078487")
-    password_element = wait_element_visibility(By.ID, "qazwsxedc147.")
+    username_element = wait_element_visibility(By.NAME, "")
+    password_element = wait_element_visibility(By.ID, "")
     slow_input(username_element, "username")
     slow_input(password_element, "password")
     login_btn_element = wait_element_visibility(By.CSS_SELECTOR,".btn.btn-account.btn-active")
