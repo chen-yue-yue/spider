@@ -40,7 +40,7 @@ def login():
     username_element = driver.find_element(By.NAME,"username")
     password_element = driver.find_element(By.ID, "password")
     #输入用户名和密码，点击登录
-    username_element.send_keys("“)
+    username_element.send_keys("")
     password_element.send_keys("")
     password_element.send_keys(Keys.ENTER)
     random_delay()
