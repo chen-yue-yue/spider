@@ -28,7 +28,7 @@ db = MySQLDatabase(
     host='localhost',
     port=3306,
     user='admin',
-    password='')
+    password='****')
 
 
 # 电影基础信息模型（表：top250_douban）
