@@ -28,7 +28,7 @@ db = MySQLDatabase(
     host='localhost',
     port=3306,
     user='admin',
-    password='****')
+    password='@chen0308')
 
 
 # 电影基础信息模型（表：top250_douban）
@@ -93,33 +93,58 @@ def write_movies_to_excel(movies):
 
 
 # 储存所有电影信息到MySQL
+# 储存所有电影信息到MySQL
 def write_movies_to_mysql(movies):
     try:
+        # 1. 连接数据库
         db.connect()
+        print("数据库连接成功")
+
+        # 2. 自动创建表（safe=True：表已存在则不报错，不会覆盖现有表）
+        Movie.create_table(safe=True)
+        MovieDirectors.create_table(safe=True)
+        print("两张表创建成功（若表已存在则跳过创建）")
+
+        # 3. 删除旧数据（清空表，方便重新写入最新爬虫数据）
+        Movie.delete().execute()
+        MovieDirectors.delete().execute()
+        print("旧数据删除成功，准备写入新数据")
+
+        # 4. 开启事务，批量写入新数据
+        with db.atomic():
+            for movie_dict in movies:
+                # 注意：转换数据类型（爬虫获取的是字符串，需匹配表模型的字段类型）
+                rank = int(movie_dict["排名"])
+                title = movie_dict["标题"]
+                score = float(movie_dict["评分"])
+                year = int(movie_dict["年份"])
+                rating_count = int(movie_dict["评价人数"])
+
+                movie = Movie.create(
+                    rank=rank,
+                    title=title,
+                    score=score,
+                    year=year,
+                    rating_count=rating_count
+                )
+                print(f"电影《{movie.title}》写入成功，id={movie.id}")
+
+                director_list = movie_dict["导演"]
+                for director_name in director_list:
+                    director_obj = MovieDirectors.create(
+                        movie_id=movie.id,
+                        director=director_name
+                    )
+                    print(f"导演{director_obj.director}写入成功，id={director_obj.id}")
+        print("所有数据均成功写入MySQL数据库")
+
     except Exception as e:
-        print(f"数据库连接失败: {e}")
-        return
-
-    Movie.delete().execute()
-    MovieDirectors.delete().execute()
-    print("数据删除成功")
-
-    # 开启事务
-    with db.atomic():
-        for movie_dict in movies:
-            movie = Movie.create(rank=movie_dict["排名"],
-                                 title=movie_dict["标题"],
-                                 score=movie_dict["评分"],
-                                 year=movie_dict["年份"],
-                                 rating_count=movie_dict["评价人数"])
-            print(f"电影《{movie.title}》写入成功，id={movie.id}")
-
-            director_list = movie_dict["导演"]
-            for director_name in director_list:
-                director_obj = MovieDirectors.create(movie_id=movie.id, director=director_name)
-                print(f"导演{director_obj.director}写入成功，id={director_obj.id}")
-
-
+        print(f"操作失败: {e}")
+    finally:
+        # 5. 无论操作成功与否，最终关闭数据库连接，避免泄露
+        if db.is_closed() is False:
+            db.close()
+            print("数据库连接已关闭")
 # 获取电影标题
 def get_title(item):
     title_elements = item.xpath('.//div[@class="hd"]/a/span[1]/text()')
